@@ -1,0 +1,21 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "authors": [
+    "Anya Novikova <pesik@ane4k.in>"
+  ],
+  "main": "dist/index.html",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "html",
+    "jade",
+    "less"
+  ],
+  "license": "MIT",
+  "homepage": "ane4k.in",
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
