@@ -1,9 +1,18 @@
 @import "colors";
 
+.gutter-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
 .box-logo {
 
   position: absolute;
-  top:40px;
+  top:24px;
   z-index: 1;
   background: white;
   width: 120px;
@@ -24,10 +33,6 @@
   color: @slogan-color;
 }
 
-.gutter-0 {
-  padding-left: 0;
-  padding-right: 0;
-}
 
 .carousel-inner {
   color: white;
@@ -44,25 +49,25 @@
 
 .bg-women-1 {
   min-height: 408px;
-  background: url("../images/carouselslide/women1.jpg") 50% 100% no-repeat;
+  background: url("../images/carouselslide/women1.jpg") 50% 85% no-repeat;
   background-size: cover;
 }
 
 .bg-surfing-3 {
   min-height: 408px;
-  background: url("../images/carouselslide/surfing3.jpg") 50% 70% no-repeat;
+  background: url("../images/carouselslide/surfing3.jpg") 50% 80% no-repeat;
   background-size: cover;
 }
 
 .bg-surfing-5 {
   min-height: 408px;
-  background: url("../images/carouselslide/surfing5.jpg") 50% 50% no-repeat;
+  background: url("../images/carouselslide/surfing5.jpg") 50% 45% no-repeat;
   background-size: cover;
 }
 
 .bg-woman {
   min-height: 408px;
-  background: url("../images/carouselslide/woman.jpg") 50% 70% no-repeat;
+  background: url("../images/carouselslide/woman.jpg") 50% 40% no-repeat;
   background-size: cover;
 }
 
@@ -96,6 +101,19 @@
 
 .box-blue-color-bg {
   background: rgba(64, 117, 160, 0.6);
+
+  @media (max-width: 568px) {
+    background: transparent;
+
+  }
+}
+
+.thumbnail-box {
+  border-color:  @thumb-border-color;
+}
+
+span.welness {
+  font-weight: bold;
 }
 
 .footer-nav {
