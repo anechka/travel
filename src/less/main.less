@@ -1,6 +1,36 @@
+@import "colors";
+
+.box-logo {
+
+  position: absolute;
+  top:40px;
+  z-index: 1;
+  background: white;
+  width: 120px;
+  padding: 12px;
+  margin-left: 15px;
+
+  .logo {
+    width: 96px;
+    height: 136px;
+  }
+
+}
+
+.slogan {
+  font-size: 36px;
+  font-weight: bold;
+
+  color: @slogan-color;
+}
+
 .gutter-0 {
   padding-left: 0;
   padding-right: 0;
+}
+
+.carousel-inner {
+  color: white;
 }
 
 .carousel-control.control-left, .carousel-control.control-right{
@@ -11,7 +41,6 @@
 .carousel-control.control-left, .carousel-control.control-right{
   background-image: none;
 }
-
 
 .bg-women-1 {
   min-height: 408px;
@@ -45,11 +74,28 @@
 
 .box-description {
   min-height: 408px;
+  width: 358px;
+  margin-right: 15px;
+
+  button.btn.btn-default {
+    font-weight: bold;
+
+    background-color: @btn-book-now-bg;
+    border-color: @btn-book-now-bg;
+
+    color: @btn-book-now-text;
+
+    &:hover {
+      background-color: @btn-book-now-hover-bg;
+      border-color: @btn-book-now-hover-bg;
+
+      color: @btn-book-now-hover-text;
+    }
+  }
 }
 
 .box-blue-color-bg {
   background: rgba(64, 117, 160, 0.6);
-  color: white;
 }
 
 .footer-nav {

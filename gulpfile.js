@@ -32,7 +32,7 @@ gulp.task('less', function() {
 gulp.task('build', ['less', 'jade']);
 
 gulp.task('watch', ['build'], function() {
-  gulp.watch('src/less/main.less', ['less']);
+  gulp.watch('src/less/*.less', ['less']);
   gulp.watch('src/jade/*.jade', ['jade']);
 });
 

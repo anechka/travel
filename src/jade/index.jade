@@ -17,50 +17,51 @@ html(lang='en')
         link(href="css/main.css", rel='stylesheet')
     body
         .container-fluid
-            .container
 
-                header
+            header
 
-                    .row
-                        .col-md-4
-                            img(src="images/logo.png", width="150px", height="200px")
-
-
-                    .row
-
-                        .col-md-12 Healthy vacations last forever!
-
+                .container
 
                     .row
                         .col-md-12
-                            #carousel-content.carousel.slide(data-ride='carousel')
-                                // Indicators
-                                ol.carousel-indicators
-                                    li.active(data-target='#carousel-content', data-slide-to='0')
-                                    li(data-target='#carousel-content', data-slide-to='1')
-                                    li(data-target='#carousel-content', data-slide-to='2')
-                                    li(data-target='#carousel-content', data-slide-to='3')
-                                    li(data-target='#carousel-content', data-slide-to='4')
-                                // Wrapper for slides
-                                .carousel-inner(role='listbox')
-
-                                    .item.active
-                                        .col-md-12.bg-women-1
-                                            .row
-                                                .col-md-5.col-xs-5.box-description.box-blue-color-bg
-                                                    h2 Classes Yoga
-
-                                                    p Sample text for related section talks briefly about the benefits of the activities so clientes know why it is bundled into the vacations package by default.
-                                                        |Other such sections will be add-ons to the vacations, for example golf.
-
-                                                    p
-                                                        button.btn.btn-default.pull-right(type="button") BOOK NOW
+                            span.slogan Healthy vacations last forever!
 
 
-                                    .item
-                                        .col-md-12.bg-surfing-3
-                                            .row
-                                                .col-md-offset-7.col-md-5.box-description
+            .row
+                .col-md-12.gutter-0
+                    .container
+                            .row
+                                .col-md-4.box-logo
+                                    img(src="images/logo.png").logo
+                    #carousel-content.carousel.slide(data-ride='carousel')
+                        // Indicators
+                        ol.carousel-indicators
+                            li.active(data-target='#carousel-content', data-slide-to='0')
+                            li(data-target='#carousel-content', data-slide-to='1')
+                            li(data-target='#carousel-content', data-slide-to='2')
+                            li(data-target='#carousel-content', data-slide-to='3')
+                            li(data-target='#carousel-content', data-slide-to='4')
+                        // Wrapper for slides
+                        .carousel-inner(role='listbox')
+                            .item.active
+                                .col-md-12.bg-women-1
+                                    .container
+                                        .row
+                                            .col-md-4.pull-right.box-description.box-blue-color-bg
+                                                h2 Classes Yoga
+
+                                                p Sample text for related section talks briefly about the benefits of the activities so clientes know why it is bundled into the vacations package by default.
+                                                    |Other such sections will be add-ons to the vacations, for example golf.
+
+                                                p
+                                                    button.btn.btn-default.pull-right(type="button") BOOK NOW
+
+
+                            .item
+                                .col-md-12.bg-surfing-3
+                                    .container
+                                        .row
+                                            .col-md-4.pull-right.box-description
                                                     h2
                                                         span Text2
 
@@ -70,55 +71,60 @@ html(lang='en')
                                                         button.btn.btn-default.pull-right(type="button") BOOK NOW
 
 
-                                    .item
-                                        .col-md-12.bg-surfing-5
-                                            .row
-                                                .col-md-offset-7.col-md-5.box-description
-                                                    h2
-                                                        span Text3
+                            .item
+                                .col-md-12.bg-surfing-5
+                                    .container
+                                        .row
+                                            .col-md-4.pull-right.box-description
+                                                h2
+                                                    span Text3
 
-                                                    p Sample text for related section talks briefly about the benefits of the activities so clientes know why it is bundled into the vacations package by default.
-                                                        | Other such sections will be add-ons to the vacations, for example golf.
-                                                    p
-                                                        button.btn.btn-default.pull-right(type="button") BOOK NOW
+                                                p Sample text for related section talks briefly about the benefits of the activities so clientes know why it is bundled into the vacations package by default.
+                                                    | Other such sections will be add-ons to the vacations, for example golf.
+                                                p
+                                                    button.btn.btn-default.pull-right(type="button") BOOK NOW
 
-                                    .item
-                                        .col-md-12.bg-woman
-                                            .row
-                                                .col-md-offset-7.col-md-5.box-description.box-blue-color-bg
-                                                    h2
-                                                        span Text4
+                            .item
+                                .col-md-12.bg-woman
+                                    .container
+                                        .row
+                                            .col-md-4.pull-right.box-description.box-blue-color-bg
+                                                h2
+                                                    span Text4
 
-                                                    p Sample text for related section talks briefly about the benefits of the activities so clientes know why it is bundled into the vacations package by default.
-                                                        | Other such sections will be add-ons to the vacations, for example golf.
-                                                    p
-                                                        button.btn.btn-default.pull-right(type="button") BOOK NOW
+                                                p Sample text for related section talks briefly about the benefits of the activities so clientes know why it is bundled into the vacations package by default.
+                                                    | Other such sections will be add-ons to the vacations, for example golf.
+                                                p
+                                                    button.btn.btn-default.pull-right(type="button") BOOK NOW
 
-                                    .item
-                                        .col-md-12.bg-cafe-beach
-                                            .row
-                                                .col-md-offset-7.col-md-5.box-description
-                                                    h2
-                                                        span Text5
+                            .item
+                                .col-md-12.bg-cafe-beach
+                                    .row
+                                        .col-md-4.pull-right.box-description
+                                            h2
+                                                span Text5
 
-                                                    p Sample text for related section talks briefly about the benefits of the activities so clientes know why it is bundled into the vacations package by default.
-                                                        | Other such sections will be add-ons to the vacations, for example golf.
-                                                    p
-                                                        button.btn.btn-default.pull-right(type="button") BOOK NOW
+                                            p Sample text for related section talks briefly about the benefits of the activities so clientes know why it is bundled into the vacations package by default.
+                                                | Other such sections will be add-ons to the vacations, for example golf.
+                                            p
+                                                button.btn.btn-default.pull-right(type="button") BOOK NOW
 
-                                // Controls
-                                a.left.carousel-control.control-left(href='#carousel-content', role='button', data-slide='prev')
-                                   span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-                                   span.sr-only Previous
-                                a.right.carousel-control.control-right(href='#carousel-content', role='button', data-slide='next')
-                                   span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-                                   span.sr-only Next
+                        // Controls
+                        a.left.carousel-control.control-left(href='#carousel-content', role='button', data-slide='prev')
+                           span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                           span.sr-only Previous
+                        a.right.carousel-control.control-right(href='#carousel-content', role='button', data-slide='next')
+                           span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                           span.sr-only Next
+
+
+           .container
 
                 section#main_content
                     .row
                         .col-md-4
                             .thumbnail
-                                img.img-responsive(src="images/carouselslide/women3.jpg", alt="", style="border: 1px solid red")
+                                img.img-responsive(src="images/carouselslide/women3.jpg", alt="")
                                 .caption
                                     h3 Section title
                                     p Sample text for related section talks briefly about the benefits of the activities so clientes know why it is bundled into the vacations package by default.
@@ -129,7 +135,7 @@ html(lang='en')
 
                         .col-md-4
                             .thumbnail
-                                img.img-responsive(src="images/carouselslide/meditation.jpg", alt="", style="border: 1px solid red")
+                                img.img-responsive(src="images/carouselslide/meditation.jpg", alt="")
                                 .caption
                                     h3 Section title
                                     p Sample text for related section talks briefly about the benefits of the activities so clientes know why it is bundled into the vacations package by default.
@@ -140,7 +146,7 @@ html(lang='en')
 
                         .col-md-4
                             .thumbnail
-                                img.img-responsive(src="images/carouselslide/women2.jpg", alt="", style="border: 1px solid red")
+                                img.img-responsive(src="images/carouselslide/women2.jpg", alt="")
                                 .caption
                                     h3 Section title
                                     p Sample text for related section talks briefly about the benefits of the activities so clientes know why it is bundled into the vacations package by default.
@@ -152,7 +158,7 @@ html(lang='en')
                     .row
                         .col-md-4
                             .thumbnail
-                                img.img-responsive(src="images/carouselslide/salad.jpg", alt="", style="border: 1px solid red")
+                                img.img-responsive(src="images/carouselslide/salad.jpg", alt="")
                                 .caption
                                     h3 Section title
                                     p Sample text for related section talks briefly about the benefits of the activities so clientes know why it is bundled into the vacations package by default.
