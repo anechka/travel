@@ -6,6 +6,7 @@ html(lang='en')
         meta(name='viewport', content='width=device-width, initial-scale=1')
         // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
         title Travel site
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Condensed:400,700", rel="stylesheet")
         // Bootstrap
         link(href='../bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
         // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
@@ -24,110 +25,111 @@ html(lang='en')
 
                     .row
                         .col-md-12
-                            span.slogan Healthy vacations last forever!
+                            h1.slogan Healthy vacations last forever!
 
 
-            .row
-                .col-md-12.gutter-0.margin-bottom-20
-                    .container
-                            .row
-                                .col-md-4.box-logo
-                                    img(src="images/logo.png").logo
-                    #carousel-content.carousel.slide(data-ride='carousel')
-                        // Indicators
-                        ol.carousel-indicators
-                            li.active(data-target='#carousel-content', data-slide-to='0')
-                            li(data-target='#carousel-content', data-slide-to='1')
-                            li(data-target='#carousel-content', data-slide-to='2')
-                            li(data-target='#carousel-content', data-slide-to='3')
-                            li(data-target='#carousel-content', data-slide-to='4')
-                        // Wrapper for slides
-                        .carousel-inner(role='listbox')
-                            .item.active
-                                .col-md-12.bg-women-1
-                                    .container
-                                        .row
-                                            .col-md-4.pull-right.box-description.box-blue-color-bg
-                                                h3 Change the way you plan
-                                                    br
-                                                    |YOUR VACATIONS
-
-                                                p Healthy lifestyles are featured in all vacations packages
-
-                                                p
-                                                    button.btn.btn-default.btn-lg.pull-right(type="button") BOOK NOW
-
-
-                            .item
-                                .col-md-12.bg-surfing-3
-                                    .container
-                                        .row
-                                            .col-md-4.pull-right.box-description
-
-                                                    h3 Healthy Lifestyle Vacations:
+                .row
+                    .col-md-12.gutter-0.margin-bottom-20
+                        .container
+                                .row
+                                    .col-md-4.box-logo
+                                        img(src="images/logo.png").logo
+                        #carousel-content.carousel.slide(data-ride='carousel')
+                            // Indicators
+                            ol.carousel-indicators
+                                li.active(data-target='#carousel-content', data-slide-to='0')
+                                li(data-target='#carousel-content', data-slide-to='1')
+                                li(data-target='#carousel-content', data-slide-to='2')
+                                li(data-target='#carousel-content', data-slide-to='3')
+                                li(data-target='#carousel-content', data-slide-to='4')
+                            // Wrapper for slides
+                            .carousel-inner(role='listbox')
+                                .item.active
+                                    .col-md-12.bg-women-1
+                                        .container
+                                            .row
+                                                .col-md-4.box-description.box-blue-color-bg
+                                                    h3.text-uppercase Change the way you plan
                                                         br
-                                                        |Enjoyable and Nurturing
+                                                        |YOUR VACATIONS
 
-                                                    p Deluxe accommodations, nutritious eating, yoga, bodywork rituals and many more
+                                                    p Healthy lifestyles are featured in all vacations packages
+
                                                     p
                                                         button.btn.btn-default.btn-lg.pull-right(type="button") BOOK NOW
 
 
-                            .item
-                                .col-md-12.bg-surfing-5
-                                    .container
-                                        .row
-                                            .col-md-4.pull-right.box-description
-                                                h3 Healthy Lifestyle Vacations:
-                                                    br
-                                                    |Engaging and Renewing
+                                .item
+                                    .col-md-12.bg-surfing-3
+                                        .container
+                                            .row
+                                                .col-md-4.box-description
 
-                                                p Enrich your experience with a comprehensive selection of add-on activities
-                                                p
-                                                    button.btn.btn-default.btn-lg.pull-right(type="button") BOOK NOW
+                                                        h3.text-uppercase Healthy Lifestyle Vacations:
+                                                            br
+                                                            |Enjoyable and Nurturing
 
-                            .item
-                                .col-md-12.bg-woman
-                                    .container
-                                        .row
-                                            .col-md-4.pull-right.box-description.box-blue-color-bg
-                                                h3 Healthy Lifestyle Vacations:
-                                                    br
-                                                    |Educational and Fun
-
-                                                p Discover the advanced Mayan culture and its purification rituals
-                                                p
-                                                    button.btn.btn-default.btn-lg.pull-right(type="button") BOOK NOW
-
-                            .item
-                                .col-md-12.bg-cafe-beach
-                                    .container
-                                        .row
-                                            .col-md-4.pull-right.box-description
-                                                h3 Healthy Lifestyle Vacations:
-                                                    br
-                                                    |Relevant and Cross-Generation
-
-                                                p Activities for different age groups and a perfectly healthy vacation for all
-                                                p
-                                                    button.btn.btn-default.btn-lg.pull-right(type="button") BOOK NOW
-
-                        // Controls
-                        a.left.carousel-control.control-left(href='#carousel-content', role='button', data-slide='prev')
-                           span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-                           span.sr-only Previous
-                        a.right.carousel-control.control-right(href='#carousel-content', role='button', data-slide='next')
-                           span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-                           span.sr-only Next
+                                                        p Deluxe accommodations, nutritious eating, yoga, bodywork rituals and many more
+                                                        p
+                                                            button.btn.btn-default.btn-lg.pull-right(type="button") BOOK NOW
 
 
-           .container
+                                .item
+                                    .col-md-12.bg-surfing-5
+                                        .container
+                                            .row
+                                                .col-md-4.box-description
+                                                    h3.text-uppercase Healthy Lifestyle Vacations:
+                                                        br
+                                                        |Engaging and Renewing
 
-                section#main_content
+                                                    p Enrich your experience with a comprehensive selection of add-on activities
+                                                    p
+                                                        button.btn.btn-default.btn-lg.pull-right(type="button") BOOK NOW
+
+                                .item
+                                    .col-md-12.bg-woman
+                                        .container
+                                            .row
+                                                .col-md-4.box-description.box-blue-color-bg
+                                                    h3.text-uppercase Healthy Lifestyle Vacations:
+                                                        br
+                                                        |Educational and Fun
+
+                                                    p Discover the advanced Mayan culture and its purification rituals
+                                                    p
+                                                        button.btn.btn-default.btn-lg.pull-right(type="button") BOOK NOW
+
+                                .item
+                                    .col-md-12.bg-cafe-beach
+                                        .container
+                                            .row
+                                                .col-md-4.box-description.box-wood-color-bg
+                                                    h3.text-uppercase Healthy Lifestyle Vacations:
+                                                        br
+                                                        |Relevant and Cross-Generation
+
+                                                    p Activities for different age groups and a perfectly healthy vacation for all
+                                                    p
+                                                        button.btn.btn-default.btn-lg.pull-right(type="button") BOOK NOW
+
+                            // Controls
+                            a.left.carousel-control.control-left(href='#carousel-content', role='button', data-slide='prev')
+                               span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                               span.sr-only Previous
+                            a.right.carousel-control.control-right(href='#carousel-content', role='button', data-slide='next')
+                               span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                               span.sr-only Next
+
+
+
+
+            section#main_content
+                .container
                     .row
                         .col-md-4
                             .thumbnail.thumbnail-box
-                                img.img-responsive(src="images/carouselslide/women3.jpg", alt="")
+                                img.img-responsive(src="images/women3.jpg", alt="")
                                 .caption
                                     h3 Section title
                                     p Sample text for related section talks briefly about the benefits of the activities so clientes know why it is bundled into the vacations package by default.
@@ -138,7 +140,7 @@ html(lang='en')
 
                         .col-md-4
                             .thumbnail.thumbnail-box
-                                img.img-responsive(src="images/carouselslide/meditation.jpg", alt="")
+                                img.img-responsive(src="images/meditation.jpg", alt="")
                                 .caption
                                     h3 Section title
                                     p Sample text for related section talks briefly about the benefits of the activities so clientes know why it is bundled into the vacations package by default.
@@ -149,7 +151,7 @@ html(lang='en')
 
                         .col-md-4
                             .thumbnail.thumbnail-box
-                                img.img-responsive(src="images/carouselslide/women2.jpg", alt="")
+                                img.img-responsive(src="images/women2.jpg", alt="")
                                 .caption
                                     h3 Section title
                                     p Sample text for related section talks briefly about the benefits of the activities so clientes know why it is bundled into the vacations package by default.
@@ -161,7 +163,7 @@ html(lang='en')
                     .row
                         .col-md-4
                             .thumbnail.thumbnail-box
-                                img.img-responsive(src="images/carouselslide/salad.jpg", alt="")
+                                img.img-responsive(src="images/salad.jpg", alt="")
                                 .caption
                                     h3 Section title
                                     p Sample text for related section talks briefly about the benefits of the activities so clientes know why it is bundled into the vacations package by default.
@@ -171,32 +173,33 @@ html(lang='en')
                                         | .
 
                         .col-md-8
-                            img.img-responsive(src="images/carouselslide/surfing1.JPG")
+                            img.img-responsive(src="images/surfing1.JPG", alt="")
 
                     .row
                         .col-md-12.margin-bottom-20
                             |Page note if applicable.
                             |Homepage note: The pictures on this website are spontaneous, not staged. We believe in the power of authenticity that a healthy lifestyle can bring. Special thanks to those who allow us to use their personal pictures to achieve this goal.
                             |Always remember, "healthy vacations last forever!”.
+
+
             footer
-                .row
-                    .col-md-12(style="background: lightgrey")
-                        .row
-                            .col-md-3 Go Healthy Travel.&nbsp
-                                span.welness Wellness Tourism&nbsp
-                                |by Cape May Global Partners.
+                .container
+                    .row
+                        .col-md-6 Go Healthy Travel.&nbsp
+                            span.welness Wellness Tourism&nbsp
+                            |by Cape May Global Partners.
 
-                            .col-md-7.gutter-0
+                        .col-md-6.gutter-0
 
-                                ul.list-unstyled.list-inline.footer-nav
-                                    li
-                                        a(href="#") Bookings
+                            ul.list-unstyled.list-inline.footer-nav
+                                li
+                                    a(href="#") Bookings
 
-                                    li
-                                        a(href="#") Privacy
+                                li
+                                    a(href="#") Privacy
 
-                                    li
-                                        a(href="#") Terms
+                                li
+                                    a(href="#") Terms
 
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")

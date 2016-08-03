@@ -1,0 +1,19 @@
+footer {
+  padding-top: 12px;
+  background-color: @footer-bg;
+  color: @footer-text;
+
+  span.welness {
+    font-weight: bold;
+    color: darken(@footer-text, 20%);
+  }
+
+  .footer-nav {
+    > li > a {
+        border-left: 1px solid darken(@footer-text, 10%);
+        padding-left: 5px;
+
+        color: @footer-text;
+      }
+  }
+}
