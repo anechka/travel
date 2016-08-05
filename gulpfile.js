@@ -15,7 +15,7 @@ gulp.task('jade', function() {
  
  // jade templates from src/jade folder
  gulp.src('src/jade/*.jade')
- .pipe(jade({pretty: true}))
+ .pipe(jade({pretty: false}))
  .pipe(gulp.dest('dist'));
 });
 
