@@ -1,12 +1,23 @@
 footer {
-  padding-top: 12px;
+  height: 130px;
+  padding-left: 30px;
+  padding-top: 30px;
   background-color: @footer-bg;
   color: @footer-text;
 
-  span.welness {
-    font-weight: bold;
-    color: darken(@footer-text, 20%);
+  .footer-text-box {
+    width: 27%;
+    span.welness {
+      font-weight: bold;
+      color: lighten(@footer-bg, 20%);
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+
+    }
   }
+
+
 
   .footer-nav {
     > li > a {

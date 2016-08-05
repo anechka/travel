@@ -6,7 +6,7 @@ html(lang='en')
         meta(name='viewport', content='width=device-width, initial-scale=1')
         // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
         title Travel site
-        link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Condensed:400,700", rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Roboto:400,500", rel='stylesheet' type='text/css')
         link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel="stylesheet")
         //// Bootstrap
         //link(href='../bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
@@ -21,20 +21,12 @@ html(lang='en')
         .container-fluid
 
             header
-
-                .container
-
-                    .row
-                        .col-md-12
-                            h1.slogan Healthy vacations last forever!
-
-
                 .row
                     .col-md-12.gutter-0.margin-bottom-20
-                        .container
-                                .row
-                                    .col-md-4.box-logo
-                                        img(src="images/logo.png").logo
+
+                        .row
+                            .col-md-4.box-logo
+                                img(src="images/gohealthy-logo.png").logo
                         #carousel-content.carousel.slide(data-ride='carousel')
                             // Indicators
                             ol.carousel-indicators
@@ -49,10 +41,8 @@ html(lang='en')
                                     .col-md-12.bg-women-1
                                         .container
                                             .row
-                                                .col-md-4.box-description.box-blue-color-bg
-                                                    h3.text-uppercase Change the way you plan
-                                                        br
-                                                        span.vacations YOUR VACATIONS
+                                                .col-md-4.box-description.box-white-color-bg.slide-1
+                                                    h3.vacations Healthy vacations last forever!
 
                                                     p All vacation packages feature healthy lifestyles.
 
@@ -64,9 +54,9 @@ html(lang='en')
                                     .col-md-12.bg-surfing-3
                                         .container
                                             .row
-                                                .col-md-4.box-description.box-blue-color-bg
+                                                .col-md-4.box-description.box-white-color-bg.slide-2
 
-                                                        h3.text-uppercase Healthy Lifestyle Vacations Are:
+                                                        h3 Healthy Lifestyle Vacations Are:
                                                             br
                                                             |Enjoyable and Nurturing
 
@@ -79,12 +69,12 @@ html(lang='en')
                                     .col-md-12.bg-surfing-5
                                         .container
                                             .row
-                                                .col-md-4.box-description.box-blue-color-bg
-                                                    h3.text-uppercase Healthy Lifestyle Vacations Are:
+                                                .col-md-4.box-description.box-white-color-bg.slide-3
+                                                    h3 Healthy Lifestyle Vacations Are:
                                                         br
-                                                        |Engaging and Renewing
+                                                        |Enjoyable and Nurturing
 
-                                                    p Enrich your experience with a comprehensive selection of add-on activities.
+                                                    p Enjoy deluxe suites, nutritious meals, yoga, bodywork rituals, and more!
                                                     p
                                                         button.btn.btn-default.btn-lg.pull-right(type="button") BOOK NOW
 
@@ -92,8 +82,8 @@ html(lang='en')
                                     .col-md-12.bg-woman
                                         .container
                                             .row
-                                                .col-md-4.box-description.box-blue-color-bg
-                                                    h3.text-uppercase Healthy Lifestyle Vacations Are:
+                                                .col-md-4.box-description.box-white-color-bg.slide-4
+                                                    h3 Healthy Lifestyle Vacations Are:
                                                         br
                                                         |Educational and Fun
 
@@ -105,8 +95,8 @@ html(lang='en')
                                     .col-md-12.bg-cafe-beach
                                         .container
                                             .row
-                                                .col-md-4.box-description.box-blue-color-bg
-                                                    h3.text-uppercase Healthy Lifestyle Vacations Are:
+                                                .col-md-4.box-description.box-white-color-bg.slide-5
+                                                    h3 Healthy Lifestyle Vacations Are:
                                                         br
                                                         |Relevant and Cross-Generation
 
@@ -174,7 +164,7 @@ html(lang='en')
                                         | .
 
                         .col-md-8
-                            img.img-responsive(src="images/surfing1.JPG", alt="")
+                            img.img-responsive(src="images/surfing1.jpg", alt="")
 
                     .row
                         .col-md-12.margin-bottom-20
@@ -183,14 +173,14 @@ html(lang='en')
                             |Always remember, "healthy vacations last forever!”.
 
 
-            footer
-                .container
+            .row
+                footer
                     .row
-                        .col-md-6 Go Healthy Travel.&nbsp
+                        .col-md-3.footer-text-box Go Healthy Travel.&nbsp
                             span.welness Wellness Tourism&nbsp
                             |by Cape May Global Partners.
 
-                        .col-md-6.gutter-0
+                        .col-md-8
 
                             ul.list-unstyled.list-inline.footer-nav
                                 li
