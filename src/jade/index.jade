@@ -23,10 +23,10 @@ html(lang='en')
             header
                 .row
                     .col-md-12.gutter-0.margin-bottom-20
-
-                        .row
-                            .col-md-4.box-logo
-                                img(src="images/gohealthy-logo.png").logo
+                        .container
+                            .row
+                                .col-md-4.gutter-0.box-logo
+                                    img(src="images/gohealthy-logo.png").logo
                         #carousel-content.carousel.slide(data-ride='carousel')
                             // Indicators
                             ol.carousel-indicators
@@ -42,7 +42,9 @@ html(lang='en')
                                         .container
                                             .row
                                                 .col-md-4.box-description.box-white-color-bg.slide-1
-                                                    h3.vacations Healthy vacations last forever!
+                                                    h3.vacations Healthy Vacations
+                                                        br
+                                                        |Last Forever!
 
                                                     p All vacation packages feature healthy lifestyles.
 
@@ -167,7 +169,7 @@ html(lang='en')
                             img.img-responsive(src="images/surfing1.jpg", alt="")
 
                     .row
-                        .col-md-12.margin-bottom-20
+                        .col-md-12.margin-bottom-20.margin-top-20
                             |Page note if applicable.
                             |Homepage note: The pictures on this website are spontaneous, not staged. We believe in the power of authenticity that a healthy lifestyle can bring. Special thanks to those who allow us to use their personal pictures to achieve this goal.
                             |Always remember, "healthy vacations last forever!”.
@@ -175,22 +177,26 @@ html(lang='en')
 
             .row
                 footer
-                    .row
-                        .col-md-3.footer-text-box Go Healthy Travel.&nbsp
-                            span.welness Wellness Tourism&nbsp
-                            |by Cape May Global Partners.
+                    .container
+                        .row
 
-                        .col-md-8
+                            .col-md-3
 
-                            ul.list-unstyled.list-inline.footer-nav
-                                li
-                                    a(href="#") Bookings
+                                ul.list-unstyled.list-inline.footer-nav
+                                    li
+                                        a(href="#") Bookings
 
-                                li
-                                    a(href="#") Privacy
+                                    li
+                                        a(href="#") Privacy
 
-                                li
-                                    a(href="#") Terms
+                                    li
+                                        a(href="#") Terms
+
+                            .col-md-9 Go Healthy Travel.&nbsp
+                                span.welness Wellness Tourism&nbsp
+                                |by Cape May Global Partners.
+
+
 
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
