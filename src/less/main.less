@@ -62,7 +62,7 @@
   background: url("../images/carouselslide/women1.jpg") 50% 85% no-repeat;
   background-size: cover;
   @media (max-width: 768px) {
-    height: 600px;
+    min-height: 690px;
 
   }
 }
@@ -72,7 +72,7 @@
   background: url("../images/carouselslide/surfing3.jpg") 50% 80% no-repeat;
   background-size: cover;
   @media (max-width: 768px) {
-    height: 690px;
+    min-height: 690px;
 
   }
 }
@@ -82,7 +82,7 @@
   background: url("../images/carouselslide/surfing5.jpg") 50% 50% no-repeat;
   background-size: cover;
   @media (max-width: 768px) {
-    height: 690px;
+    min-height: 690px;
 
   }
 }
@@ -92,7 +92,7 @@
   background: url("../images/carouselslide/woman.jpg") 50% 40% no-repeat;
   background-size: cover;
   @media (max-width: 768px) {
-    height: 690px;
+    min-height: 690px;
 
   }
 }
@@ -102,7 +102,7 @@
   background: url("../images/carouselslide/cafe_beach.jpg") 50% 70% no-repeat;
   background-size: cover;
   @media (max-width: 768px) {
-    height: 690px;
+    min-height: 690px;
 
   }
 }
@@ -128,8 +128,8 @@
     button.btn.btn-default {
 
       position: absolute;
-      top: 240px;
       right: 15px;
+      bottom: -15px;
 
       font-weight: bold;
       letter-spacing: 1px;
@@ -166,38 +166,18 @@
       margin-top: 0;
     }
 
-    button.btn.btn-default {
-
-      @media (max-width: 480px) {
-        top: 290px;
-
-      }
-
-    }
-
   }
 
-  &.slide-2, &.slide-3, &.slide-4, &.slide-5 {
-    width: 600px;
-  }
 
   &.slide-2, &.slide-3, &.slide-4, &.slide-5 {
-
     float: right;
     margin-top: 150px;
     min-height: 270px;
+    width: 600px;
 
     h3 {
 
       margin-top: 0;
-    }
-
-    button.btn.btn-default {
-      top: 240px;
-
-      @media (max-width: 480px) {
-        top: 430px;
-      }
     }
 
     @media (max-width: 768px) {
@@ -227,46 +207,6 @@
     }
 
   }
-
-  &.slide-2, &.slide-3 {
-
-    button.btn.btn-default {
-
-      @media (min-width: 481px) and (max-width: 568px){
-        top: 280px;
-
-      }
-    }
-
-  }
-
-  &.slide-3, &.slide-4 {
-
-    button.btn.btn-default {
-
-      @media (max-width: 480px) {
-        top: 400px;
-      }
-    }
-
-  }
-
-  &.slide-5 {
-
-    button.btn.btn-default {
-
-      @media (min-width: 481px) and (max-width: 568px){
-        top: 280px;
-
-      }
-
-      @media (max-width: 480px) {
-        top: 440px;
-      }
-    }
-
-  }
-
 
 }
 
