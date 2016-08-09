@@ -6,6 +6,34 @@ html(lang='en')
         meta(name='viewport', content='width=device-width, initial-scale=1')
         // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
         title Go Healthy Travel - Playa del Carmen, Riviera Maya
+        script(type='text/javascript').
+            function showStuff(id1, id2, text, btn2, btn) {
+                //show paragraph1
+                document.getElementById(id1).style.display = 'block';
+                //show paragraph2
+                document.getElementById(id2).style.display = 'block';
+                // show the text
+                document.getElementById(text).style.visibility = 'visible';
+                //show the link ...less
+                document.getElementById(btn2).style.display = 'inline-block';
+                // hide the link ...more
+                btn.style.display = 'none';
+            }
+
+            function hideStuff(id1, id2, text, btn2, btn) {
+                //hide paragraph1
+                document.getElementById(id1).style.display = 'none';
+                //hide paragraph2
+                document.getElementById(id2).style.display = 'none';
+                // hide the text
+                document.getElementById(text).style.visibility = 'hidden';
+                //show the link ...more
+                document.getElementById(btn2).style.display = 'inline-block';
+                // hide the link ...less
+                btn.style.display = 'none';
+
+            }
+
         link(href="https://fonts.googleapis.com/css?family=Roboto:400,500", rel='stylesheet' type='text/css')
         link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel="stylesheet")
         //// Bootstrap
@@ -125,11 +153,14 @@ html(lang='en')
                                 img.img-responsive(src="images/salad.jpg", alt="")
                                 .caption
                                     h3 Nutritious Meals
-                                    p Enjoy the magic of master chef, plant based cuisine during your vacations.
-                                        |Her food will unify your mind, body and spirit, at a cellular level and in a holistic sense.
-                                    p An abondance of irrefutable scientific data confirms that a whole food, plant based diet is ideal for helping your cells, organs and body stave off disease, achieve and maintain your ideal body weight, enhance exercice performance and strive throughout life.
+                                    p Enjoy the magic of master chef, plant based cuisine during your vacations.&nbsp
+                                        a(href="#", id="link1", onclick="showStuff('par1', 'par2', 'span1', 'link2', this); return false;") ...more
+                                        span(style="visibility: hidden", id="span1")
+                                            |Her food will unify your mind, body and spirit, at a cellular level and in a holistic sense.&nbsp
+                                            a(href="#", id="link2", onclick="hideStuff('par1', 'par2', 'span1', 'link1', this); return false;") ...less
+                                    p(style="display:none", id="par1") An abondance of irrefutable scientific data confirms that a whole food, plant based diet is ideal for helping your cells, organs and body stave off disease, achieve and maintain your ideal body weight, enhance exercice performance and strive throughout life.
                                         |The benefits are astounding.
-                                    p Go Healthy vacations include whole food plant based cuisine. Start planning. Choose your hotel.&nbsp
+                                    p(style="display:none", id="par2") Go Healthy vacations include whole food plant based cuisine. Start planning. Choose your hotel.&nbsp
                                         a(href="#") booking now
                                         |.
 
@@ -226,3 +257,4 @@ html(lang='en')
 
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+
