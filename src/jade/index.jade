@@ -7,34 +7,59 @@ html(lang='en')
         // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
         title Go Healthy Travel - Playa del Carmen, Riviera Maya
         script(type='text/javascript').
-            function showStuff(id1, id2, text, btn2, btn) {
-                //show paragraph1
+            function showStuff(id1, text, el2, el) {
+                //show paragraph
                 document.getElementById(id1).style.display = 'block';
-                //show paragraph2
+                // show the text
+                document.getElementById(text).style.visibility = 'visible';
+                //show the link ...less
+                document.getElementById(el2).style.display = 'inline-block';
+                // hide the link ...more
+                el.style.display = 'none';
+            }
+
+            function hideStuff(id1, text, el2, el) {
+
+                //hide paragraph
+                document.getElementById(id1).style.display = 'none';
+                // hide the text
+                document.getElementById(text).style.visibility = 'hidden';
+                //show the link ...more
+                document.getElementById(el2).style.display = 'inline-block';
+                // hide the link ...less
+                el.style.display = 'none';
+
+            }
+
+            function showContent(id1, id2, text, el2, el) {
+                //show paragraph
+                document.getElementById(id1).style.display = 'block';
+                //show paragraph
                 document.getElementById(id2).style.display = 'block';
                 // show the text
                 document.getElementById(text).style.visibility = 'visible';
                 //show the link ...less
-                document.getElementById(btn2).style.display = 'inline-block';
+                document.getElementById(el2).style.display = 'inline-block';
                 // hide the link ...more
-                btn.style.display = 'none';
+                el.style.display = 'none';
             }
 
-            function hideStuff(id1, id2, text, btn2, btn) {
-                //hide paragraph1
+            function hideContent(id1, id2, text, el2, el) {
+
+                //hide paragraph
                 document.getElementById(id1).style.display = 'none';
-                //hide paragraph2
+                //hide paragraph
                 document.getElementById(id2).style.display = 'none';
                 // hide the text
                 document.getElementById(text).style.visibility = 'hidden';
                 //show the link ...more
-                document.getElementById(btn2).style.display = 'inline-block';
+                document.getElementById(el2).style.display = 'inline-block';
                 // hide the link ...less
-                btn.style.display = 'none';
+                el.style.display = 'none';
 
             }
 
-        link(href="https://fonts.googleapis.com/css?family=Roboto:400,500", rel='stylesheet' type='text/css')
+        link(href="https://fonts.googleapis.com/css?family=Roboto:400,300,500", rel='stylesheet', type='text/css')
         link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel="stylesheet")
         //// Bootstrap
         //link(href='../bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
@@ -43,6 +68,8 @@ html(lang='en')
         //if lt IE 9
           script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
           script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css", rel="stylesheet")
 
         link(href="css/main.css", rel='stylesheet')
     body
@@ -147,22 +174,134 @@ html(lang='en')
 
             section#main_content
                 .container
+
+                    .row
+                        .col-md-4.hotel-room-box
+                            .row
+                                .col-md-12.margin-bottom-20
+                                    img.img-responsive(src="images/rooms/5th-ave-1.jpg")
+
+                            .row
+                                .col-md-8
+                                    h4 Catlonia Riviera Maya
+                                .col-md-4
+                                    span.price $13,000.00
+
+                            .row
+                                .col-md-4.col-md-offset-8
+                                    span.for-night por noche
+
+                            .row
+                                .col-md-8.text-description Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                                .col-md-4
+                                    p.plus-sign-box +
+                                    p.upgrade Un upgrade por
+                                    p.price-optional $3,000.00
+                                    p.optional (optional)
+
+                            .row
+                                .col-md-8.disponible-box.margin-top-20
+                                    i.fa.fa-file-o.icon-file(aria-hidden="true")
+                                    span Upgrades disponibles
+                                    i.fa.fa-check.icon-check(aria-hidden="true")
+                                    span.disponible Disponible
+
+                                .col-md-4.margin-top-20
+                                    button.btn.btn-default.text-uppercase.btn-reservar(type="submit") Reservar
+
+
+                        .col-md-4.hotel-room-box
+                            .row
+                                .col-md-12.margin-bottom-20
+                                    img.img-responsive(src="images/rooms/5th-ave-2.jpg")
+
+                            .row
+                                .col-md-8
+                                    h4 Barcelo Maya
+                                        br
+                                        |Palace Deluxe
+                                .col-md-4
+                                    span.price $13,000.00
+
+                            .row
+                                .col-md-4.col-md-offset-8
+                                    span.for-night por noche
+
+                            .row
+                                .col-md-8.text-description Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                                .col-md-4
+                                    p.plus-sign-box +
+                                    p.upgrade Un upgrade por
+                                    p.price-optional $3,000.00
+                                    p.optional (optional)
+
+                            .row
+                                .col-md-8.disponible-box.margin-top-20
+                                    i.fa.fa-file-o.icon-file(aria-hidden="true")
+                                    span Upgrades disponibles
+                                    i.fa.fa-check.icon-check(aria-hidden="true")
+                                    span Disponible
+
+                                .col-md-4.margin-top-20
+                                    button.btn.btn-default.text-uppercase.btn-reservar(type="submit") Reservar
+
+
+                        .col-md-4.hotel-room-box
+                            .row
+                                .col-md-12.margin-bottom-20
+                                    img.img-responsive(src="images/rooms/beach-house-1.jpg")
+
+                            .row
+                                .col-md-8
+                                    h4 Platinum Yucatan
+                                        br
+                                        |Princess
+                                .col-md-4
+                                    span.price $13,000.00
+
+                            .row
+                                .col-md-4.col-md-offset-8
+                                    span.for-night por noche
+
+                            .row
+                                .col-md-8.text-description Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                                .col-md-4
+                                    p.plus-sign-box +
+                                    p.upgrade Un upgrade por
+                                    p.price-optional $3,000.00
+                                    p.optional (optional)
+
+                            .row
+                                .col-md-8.disponible-box.margin-top-20
+                                    i.fa.fa-file-o.icon-file(aria-hidden="true")
+                                    span Upgrades disponibles
+                                    i.fa.fa-check.icon-check(aria-hidden="true")
+                                    span Disponible
+
+                                .col-md-4.margin-top-20
+                                    button.btn.btn-default.text-uppercase.btn-reservar(type="submit") Reservar
+
+
                     .row
                         .col-md-4
                             .thumbnail.thumbnail-box
                                 img.img-responsive(src="images/salad.jpg", alt="")
                                 .caption
                                     h3 Nutritious Meals
-                                    p Enjoy the magic of master chef, plant based cuisine during your vacations.&nbsp
-                                        a(href="#", id="link1", onclick="showStuff('par1', 'par2', 'span1', 'link2', this); return false;") ...more
+                                    p Enjoy the magic of master chef, plant based cuisine during your vacations. Her food will unify your mind, body and spirit, at a cellular level and in a holistic sense.
+
+                                    p An
+                                        a(href="#", id="link1", onclick="showStuff('par1', 'span1', 'link2', this); return false;") ...more
                                         span(style="visibility: hidden", id="span1")
-                                            |Her food will unify your mind, body and spirit, at a cellular level and in a holistic sense.&nbsp
-                                            a(href="#", id="link2", onclick="hideStuff('par1', 'par2', 'span1', 'link1', this); return false;") ...less
-                                    p(style="display:none", id="par1") An abondance of irrefutable scientific data confirms that a whole food, plant based diet is ideal for helping your cells, organs and body stave off disease, achieve and maintain your ideal body weight, enhance exercice performance and strive throughout life.
-                                        |The benefits are astounding.
-                                    p(style="display:none", id="par2") Go Healthy vacations include whole food plant based cuisine. Start planning. Choose your hotel.&nbsp
+                                            |abondance of irrefutable scientific data confirms
+                                            |that a whole food, plant based diet is ideal for helping your cells, organs and body stave off disease,
+                                            |achieve and maintain your ideal body weight, enhance exercice performance and strive throughout life.
+                                            |The benefits are astounding.
+
+                                    p(style="display:none", id="par1") Go Healthy vacations include whole food plant based cuisine. Start planning. Choose your hotel.&nbsp
                                         a(href="#") booking now
-                                        |.
+                                        |.&nbsp
+                                        a(href="#", id="link2", onclick="hideStuff('par1', 'span1', 'link1', this); return false;") ...less
 
                         .col-md-4
                             .thumbnail.thumbnail-box
@@ -170,11 +309,15 @@ html(lang='en')
                                 .caption
                                     h3 Massages and Body Rituals
                                     p Discover a new depth of serenity and awareness through our uniquely orchestrated massage techniques.
-                                    p Signature, restorative massage remedies leave long lasting benefits in body, mind and emotions.
-                                    p Massage treatments alternate daily with Body Rituals with high vibration, organic essential oils over pressure points and energy centres, bringing about a sense of deep release, balance and connectedness.
-                                    p Go Healthy vacations include Massages and Body Rituals. Start planning. Choose your hotel.&nbsp
+                                    p Signature, restorative massage remedies leave long lasting benefits i
+                                        a(href="#", id="link3", onclick="showContent('par2', 'par3', 'span2', 'link4', this); return false;") ...more
+                                        span(style="visibility: hidden", id="span2")
+                                            |n body, mind and emotions.
+                                    p(style="display:none", id="par2") Massage treatments alternate daily with Body Rituals with high vibration, organic essential oils over pressure points and energy centres, bringing about a sense of deep release, balance and connectedness.
+                                    p(style="display:none", id="par3") Go Healthy vacations include Massages and Body Rituals. Start planning. Choose your hotel.&nbsp
                                         a(href="#") booking now
-                                        | .
+                                        | .&nbsp
+                                        a(href="#", id="link4", onclick="hideContent('par2', 'par3', 'span2', 'link3', this); return false;") ...less
 
                         .col-md-4
                             .thumbnail.thumbnail-box
@@ -182,11 +325,15 @@ html(lang='en')
                                 .caption
                                     h3 Yoga Practice
                                     p Slow down. Stabilize your inner compass. Tune into your intuition. Build your strength. Absorb the knowlege of experienced teachers.
-                                    p Beginning and advanced learners are approached individually. Classes are available throughout the day, in an open beachfront studio.
-                                    p Increasing research show the effectiveness of yoga in maintaining and restoring physical health, emotional balance and sense of self.
-                                    p Go Healthy vacations include daily yoga practice. Start planning. Choose your hotel.&nbsp
+                                    p Beginning and advanced learners are a
+                                        a(href="#", id="link5", onclick="showContent('par4', 'par5', 'span3', 'link6', this); return false;") ...more
+                                        span(style="visibility: hidden", id="span3")
+                                            |pproached individually. Classes are available throughout the day, in an open beachfront studio.
+                                    p(style="display:none", id="par4") Increasing research show the effectiveness of yoga in maintaining and restoring physical health, emotional balance and sense of self.
+                                    p(style="display:none", id="par5") Go Healthy vacations include daily yoga practice. Start planning. Choose your hotel.&nbsp
                                         a(href="#") booking now
-                                        | .
+                                        | .&nbsp
+                                        a(href="#", id="link6", onclick="hideContent('par4', 'par5', 'span3', 'link5', this); return false;") ...less
 
                     .row
                         .col-md-4
@@ -195,11 +342,14 @@ html(lang='en')
                                 .caption
                                     h3 Extras Activities
                                     p Enrich your stay in Playa del Carmen beyond the already included healthy lifestyles featured in every vacations.
-                                        |Choose from a diverse range of activities from discovery tours and cenotes to golf, to diving or sky diving, and learning transcendental meditation.
-                                    p Or discover the traditional heritage of the Mayan culture and with visits to their communities and participation in Mayan rituals.
-                                    p Extra activities are planned after your have booked your Go Healthy vacations. Start planning. Choose your hotel.&nbsp
+                                        |Choose from a diverse range of activities from discovery
+                                        a(href="#", id="link7", onclick="showContent('par6', 'par7', 'span4', 'link8', this); return false;") ...more
+                                        span(style="visibility: hidden", id="span4") &nbsptours and cenotes to golf, to diving or sky diving, and learning transcendental meditation.
+                                    p(style="display:none", id="par6") Or discover the traditional heritage of the Mayan culture and with visits to their communities and participation in Mayan rituals.
+                                    p(style="display:none", id="par7") Extra activities are planned after your have booked your Go Healthy vacations. Start planning. Choose your hotel.&nbsp
                                         a(href="#") booking now
-                                        | .
+                                        | .&nbsp
+                                        a(href="#", id="link8", onclick="hideContent('par6', 'par7', 'span4', 'link7', this); return false;") ...less
 
                         .col-md-8
                             img.img-responsive(src="images/surfing1.jpg", alt="")
