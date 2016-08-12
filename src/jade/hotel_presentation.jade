@@ -20,7 +20,7 @@ html(lang='en')
 
         link(href="css/main.css", rel='stylesheet')
 
-    body(style="background: #e5e5e5")
+    body
         .container-fluid
             header
                 .row
@@ -28,9 +28,9 @@ html(lang='en')
                         nav.navbar.navbar-default.navigation
                             .container
                                 .row
-                                    .navbar-header(style="height: 100px")
-                                        a.navbar-brand.logo-brand(href="")
-                                            img.img-responsive.logo(src="images/gohealthy-logo.png")
+                                    .navbar-header.logo-container
+                                        a.navbar-brand.logo-brand(href="index.html")
+                                            img.logo(src="images/gohealthy-logo.png")
 
                                         button.navbar-toggle.collapsed.pull-right.btn-toggle(type="button", data-toggle="collapse", data-target="#navbarCollapse")
                                             span.sr-only Toggle navigation
@@ -52,156 +52,135 @@ html(lang='en')
                                                 a(href="#") Link5
 
             section#presentation_main_content
-                .container.main-content-container
-                    .row
-                        .col-md-12
-                            h1.text-uppercase Thompson Beach House
-                    .row
-                        .col-md-8
-                            h2 Subtitle
-                            p Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                        .col-md-4
-                            ul.list-unstyled
-                                li
-                                    span Local Information
+                .row
+                    .col-md-12.hotel-page-bg
 
-                                li
-                                    span Location
+                        .container.main-content-container
+                                .col-md-12.padding-left-right-40.box-content
+                                    .row
+                                        .col-md-12.margin-top-20
+                                            h1.text-uppercase Thompson Beach House
+                                    .row
+                                        .col-md-8
+                                            h2 Subtitle
+                                            p Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                                        .col-md-4
+                                            ul.list-unstyled.box-info
+                                                li
+                                                    span Local Information
 
-                                li
-                                    span Email Us
+                                                li
+                                                    span Location
 
-                    .row
-                        .col-md-4.hotel-room-box
-                            .row
-                                .col-md-12.margin-bottom-20
-                                    img.img-responsive(src="images/rooms/5th-ave-1.jpg")
+                                                li
+                                                    span Email Us
 
-                            .row
-                                .col-md-8.title-box
-                                    h4 Catlonia Riviera Maya
-                                .col-md-4.price-box
-                                    span.price $13,000.00
+                                    .row.margin-top-20
+                                        .col-md-4.hotel-room-box
+                                            .row
+                                                .col-md-12.margin-bottom-20.image-room-box
+                                                    img.img-responsive(src="images/rooms/5th-ave-1.jpg")
 
-                            .row
-                                .col-md-4.col-md-offset-8
-                                    span.for-night por noche
-
-                            .row
-                                .col-md-8.text-description Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                                .col-md-4
-                                    p.plus-sign-box +
-                                    p.upgrade Un upgrade por
-                                    p.price-optional $3,000.00
-                                    p.optional (optional)
-
-                            .row
-                                .col-md-8.disponible-box.margin-top-20
-                                    i.fa.fa-file-o.icon-file(aria-hidden="true")
-                                    span Upgrades disponibles
-                                    i.fa.fa-check.icon-check(aria-hidden="true")
-                                    span.disponible Disponible
-
-                                .col-md-4.margin-top-20
-                                    button.btn.btn-default.text-uppercase.btn-reservar(type="submit") Reservar
+                                            .row
+                                                .col-md-8
+                                                    h4 Catlonia Riviera Maya
+                                                .col-md-4.price-box
+                                                    span.price $13,000.00
+                                                    p
+                                                        span.for-night por noche
 
 
-                        .col-md-4.hotel-room-box
-                            .row
-                                .col-md-12.margin-bottom-20
-                                    img.img-responsive(src="images/rooms/5th-ave-2.jpg")
 
-                            .row
-                                .col-md-8
-                                    h4 Barcelo Maya
-                                        br
-                                        | Palace Deluxe
-                                .col-md-4
-                                    span.price $13,000.00
+                                            .row
+                                                .col-md-8.text-description Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                                                .col-md-4
+                                                    p.plus-sign-box +
+                                                    p.upgrade Un upgrade por
+                                                    p.price-optional $3,000.00
+                                                    p.optional (optional)
 
-                            .row
-                                .col-md-4.col-md-offset-8
-                                    span.for-night por noche
+                                            .row
+                                                .col-md-8.disponible-box.margin-top-20
+                                                    i.fa.fa-file-o.icon-file(aria-hidden="true")
+                                                    span Upgrades disponibles
+                                                    i.fa.fa-check.icon-check(aria-hidden="true")
+                                                    span.disponible Disponible
 
-                            .row
-                                .col-md-8.text-description Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                                .col-md-4
-                                    p.plus-sign-box +
-                                    p.upgrade Un upgrade por
-                                    p.price-optional $3,000.00
-                                    p.optional (optional)
-
-                            .row
-                                .col-md-8.disponible-box.margin-top-20
-                                    i.fa.fa-file-o.icon-file(aria-hidden="true")
-                                    span Upgrades disponibles
-                                    i.fa.fa-check.icon-check(aria-hidden="true")
-                                    span.disponible Disponible
-
-                                .col-md-4.margin-top-20
-                                    button.btn.btn-default.text-uppercase.btn-reservar(type="submit") Reservar
+                                                .col-md-4.margin-top-20
+                                                    button.btn.btn-default.text-uppercase.btn-reservar(type="submit") Reservar
 
 
-                        .col-md-4.hotel-room-box
-                            .row
-                                .col-md-12.margin-bottom-20
-                                    img.img-responsive(src="images/rooms/beach-house-1.jpg")
+                                        .col-md-4.hotel-room-box
+                                            .row
+                                                .col-md-12.margin-bottom-20.image-room-box
+                                                    img.img-responsive(src="images/rooms/5th-ave-2.jpg")
 
-                            .row
-                                .col-md-8
-                                    h4 Platinum Yucatan
-                                        br
-                                        | Princess
-                                .col-md-4
-                                    span.price $13,000.00
-
-                            .row
-                                .col-md-4.col-md-offset-8
-                                    span.for-night por noche
-
-                            .row
-                                .col-md-8.text-description Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                                .col-md-4
-                                    p.plus-sign-box +
-                                    p.upgrade Un upgrade por
-                                    p.price-optional $3,000.00
-                                    p.optional (optional)
-
-                            .row
-                                .col-md-8.disponible-box.margin-top-20
-                                    i.fa.fa-file-o.icon-file(aria-hidden="true")
-                                    span Upgrades disponibles
-                                    i.fa.fa-check.icon-check(aria-hidden="true")
-                                    span.disponible Disponible
-
-                                .col-md-4.margin-top-20
-                                    button.btn.btn-default.text-uppercase.btn-reservar(type="submit") Reservar
-                    .row
-                        .col-md-8
-                            img.img-responsive(src="images/rooms/beach-house-2.jpg", alt="Beach House")
-                        .col-md-4
-                            h3 Subtitle
-                            p Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-
-                    .row
-                        .col-md-4
-                            .thumbnail.thumbnail-box.thumbnail-bordered
-                                .caption
-                                    h3 Hoteliers and Property Owners
-                                    p Lorem ipsum dolor
+                                            .row
+                                                .col-md-8
+                                                    h4 Barcelo Maya
+                                                        br
+                                                        | Palace Deluxe
+                                                .col-md-4.price-box
+                                                    span.price $13,000.00
+                                                    p
+                                                        span.for-night por noche
 
 
-                        .col-md-4
-                            .thumbnail.thumbnail-box.thumbnail-bordered
-                                .caption
-                                    h3.text-uppercase Travel Professionals
-                                    p Lorem ipsum dolor
+                                            .row
+                                                .col-md-8.text-description Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                                                .col-md-4
+                                                    p.plus-sign-box +
+                                                    p.upgrade Un upgrade por
+                                                    p.price-optional $3,000.00
+                                                    p.optional (optional)
 
-                        .col-md-4
-                            .thumbnail.thumbnail-box.thumbnail-bordered
-                                .caption
-                                    h3 General Information
-                                    p Lorem ipsum dolor
+                                            .row
+                                                .col-md-8.disponible-box.margin-top-20
+                                                    i.fa.fa-file-o.icon-file(aria-hidden="true")
+                                                    span Upgrades disponibles
+                                                    i.fa.fa-check.icon-check(aria-hidden="true")
+                                                    span.disponible Disponible
+
+                                                .col-md-4.margin-top-20
+                                                    button.btn.btn-default.text-uppercase.btn-reservar(type="submit") Reservar
+
+
+                                    .row
+                                        .col-md-12
+                                            hr
+
+                                    .row.margin-top-30.margin-bottom-30
+                                        .col-md-8.image-room-box
+                                            img.img-responsive(src="images/rooms/beach-house-2.jpg", alt="Beach House")
+                                        .col-md-4
+                                            h3 Subtitle
+                                            p Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+
+
+                                    .row
+                                        .col-md-12
+                                            h3 Subtitle
+                                            p Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+
+                                    .row.margin-top-20
+                                        .col-md-4
+                                            .thumbnail.thumbnail-box.thumbnail-bordered
+                                                .caption
+                                                    h3 Hoteliers and Property Owners
+                                                    p Lorem ipsum dolor
+
+
+                                        .col-md-4
+                                            .thumbnail.thumbnail-box.thumbnail-bordered
+                                                .caption
+                                                    h3.text-uppercase Travel Professionals
+                                                    p Lorem ipsum dolor
+
+                                        .col-md-4
+                                            .thumbnail.thumbnail-box.thumbnail-bordered
+                                                .caption
+                                                    h3 General Information
+                                                    p Lorem ipsum dolor
             .row
                 footer
                     .container

@@ -59,7 +59,7 @@ html(lang='en')
 
             }
 
-        link(href="https://fonts.googleapis.com/css?family=Roboto:400,300,500", rel='stylesheet', type='text/css')
+        link(href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500", rel='stylesheet', type='text/css')
         link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel="stylesheet")
         //// Bootstrap
         //link(href='../bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
@@ -81,7 +81,8 @@ html(lang='en')
                         .container
                             .row
                                 .col-md-4.gutter-0.box-logo
-                                    img.logo(src="images/gohealthy-logo.png")
+                                    a(href="index.html")
+                                        img.logo(src="images/gohealthy-logo.png")
                         #carousel-content.carousel.slide(data-ride='carousel')
                             // Indicators
                             ol.carousel-indicators
@@ -93,7 +94,7 @@ html(lang='en')
                             // Wrapper for slides
                             .carousel-inner(role='listbox')
                                 .item.active
-                                    .col-md-12.bg-women-1
+                                    .col-md-12.bg-woman-1
                                         .container
                                             .row
                                                 .col-md-4.box-description.box-white-color-bg.slide-1
@@ -136,7 +137,7 @@ html(lang='en')
                                                     button.btn.btn-default.btn-lg.pull-right(type="button") BOOK NOW
 
                                 .item
-                                    .col-md-12.bg-woman
+                                    .col-md-12.bg-women
                                         .container
                                             .row
                                                 .col-md-4.box-description.box-white-color-bg.slide-4
@@ -177,8 +178,8 @@ html(lang='en')
                             .col-md-12.box-blue-color-bg.box-what-included
                                 .row
                                     .col-md-4.block-right-border
-                                        h5.text-uppercase Deluxe Accommodations for Your Vacations
-                                        p Select from one of these Go Healthy participating hotels, located at walking distance from our restaurant and healthy activity areas:&nbsp
+                                        h5.text-uppercase Deluxe Rooms for Your Vacations
+                                        p Go Healthy participating properties are located at walking distance from our restaurant and healthy activity areas:&nbsp
                                             a.link-place-name(href="#") Thompson Beach House
                                             |,&nbsp
                                             a.link-place-name(href="#") 5th Ave Playa
@@ -191,13 +192,13 @@ html(lang='en')
                                             a.link-place-name(href="#") Playa del Carmen
                                             |.
                                         p
-                                            a(href="#") Book Now
+                                            a(href="../reserve/index.html") Book Now
                                             span.glyphicon.glyphicon-chevron-right.icon-chevron(aria-hidden="true")
 
                                     .col-md-4.block-right-border
-                                        h5.text-uppercase Daily Healthy Lifestyle Features Included
-                                        p Nutritious breakfast, lunch and dinner. Yoga classes. Holistic Olfacto Therapy. Bodywork ritual or Signature massage.
-                                            |Meals and Yoga classes are offered at the only healthy lifestyle beachfront lounge and studio in&nbsp
+                                        h5.text-uppercase Daily Healthy Lifestyle Features
+                                        p Included: Nutritious breakfast, lunch and dinner. Yoga classes. Bodywork ritual.
+                                            |Meals and yoga classes are offered at the only healthy lifestyle beachfront lounge and studio in Playa del Carmen.&nbsp
                                             a.link-place-name(href="#") Playa del Carmen.
 
                                         p
@@ -206,9 +207,8 @@ html(lang='en')
 
                                     .col-md-4.block-right-border.no-border-bottom
                                         h5.text-uppercase More
-                                        p Complimentary airport shuttle. Complimentary room service. Upgrades to individual yoga coaching according to your level of learning and preference.
-                                            |Add-ons activities, tours and cultural discovery to further enrich your vacations experience.
-
+                                        p Free airport shuttle. Signature massage treatments. Complimentary room service.
+                                            |Plus add-ons activities, tours and cultural discovery to further enrich your experience.
 
                     .row
                         .col-md-4
@@ -216,20 +216,20 @@ html(lang='en')
                                 img.img-responsive(src="images/salad.jpg", alt="")
                                 .caption
                                     h3 Nutritious Meals
-                                    p Enjoy the magic of master chef, plant based cuisine during your vacations. Her food will unify your mind, body and spirit, at a cellular level and in a holistic sense.
+                                    p Enjoy the magic of delicious, plant-based cuisine cooked by a master chef during your vacation.
+                                        |This wholesome food will unify your body, mind, and spirit at both cellular and holistic levels.
 
-                                    p An
-                                        a(href="#", id="link1", onclick="showStuff('par1', 'span1', 'link2', this); return false;") ...more
-                                        span(style="visibility: hidden", id="span1")
-                                            |abondance of irrefutable scientific data confirms
-                                            |that a whole food, plant based diet is ideal for helping your cells, organs and body stave off disease,
-                                            |achieve and maintain your ideal body weight, enhance exercice performance and strive throughout life.
-                                            |The benefits are astounding.
+                                    p Irrefutable scientific data confirms that a whole-food, plant-based diet is ideal for helping your cells, organs, and body stave off disease,
+                                        |achieve and maintain your ideal body weight, enhance exercise performance, and generally sustain a healthy life.
+                                        |The benefits of this kind of diet are astounding.
 
-                                    p(style="display:none", id="par1") Go Healthy vacations include whole food plant based cuisine. Start planning. Choose your hotel.&nbsp
+                                    p Go Healthy vacations include whole-food, plant-based cuisine. Start planning. Reserve your hotel room by&nbsp
                                         a(href="#") booking now
                                         |.&nbsp
-                                        a(href="#", id="link2", onclick="hideStuff('par1', 'span1', 'link1', this); return false;") ...less
+                                        //p(style="display:none", id="par1")
+                                        //a(href="#", id="link1", onclick="showStuff('par1', 'span1', 'link2', this); return false;") ...more
+                                        //span(style="visibility: hidden", id="span1")
+                                        //a(href="#", id="link2", onclick="hideStuff('par1', 'span1', 'link1', this); return false;") ...less
 
                         .col-md-4
                             .thumbnail.thumbnail-box
@@ -237,47 +237,71 @@ html(lang='en')
                                 .caption
                                     h3 Massages and Body Rituals
                                     p Discover a new depth of serenity and awareness through our uniquely orchestrated massage techniques.
-                                    p Signature, restorative massage remedies leave long lasting benefits i
-                                        a(href="#", id="link3", onclick="showContent('par2', 'par3', 'span2', 'link4', this); return false;") ...more
-                                        span(style="visibility: hidden", id="span2")
-                                            |n body, mind and emotions.
-                                    p(style="display:none", id="par2") Massage treatments alternate daily with Body Rituals with high vibration, organic essential oils over pressure points and energy centres, bringing about a sense of deep release, balance and connectedness.
-                                    p(style="display:none", id="par3") Go Healthy vacations include Massages and Body Rituals. Start planning. Choose your hotel.&nbsp
+                                    p Signature, restorative massage remedies leave long-lasting benefits in the body, mind, and spirit.
+                                    p Massage treatments alternate daily with Body Rituals that include high vibration and organic essential oils
+                                        |that are concentrated on pressure points and energy centres, w
+                                        |hich bring about a sense of deep release, balance, and connection.
+                                    p Go Healthy vacations include massages and body rituals. Start planning. Reserve your hotel room by&nbsp
                                         a(href="#") booking now
-                                        | .&nbsp
-                                        a(href="#", id="link4", onclick="hideContent('par2', 'par3', 'span2', 'link3', this); return false;") ...less
+                                        |.&nbsp
+
+                                    //a(href="#", id="link3", onclick="showContent('par2', 'par3', 'span2', 'link4', this); return false;") ...more
+                                    //    span(style="visibility: hidden", id="span2")
+                                    //p(style="display:none", id="par2")
+                                    //p(style="display:none", id="par3")
+                                    //a(href="#", id="link4", onclick="hideContent('par2', 'par3', 'span2', 'link3', this); return false;") ...less
 
                         .col-md-4
                             .thumbnail.thumbnail-box
-                                img.img-responsive(src="images/women2.jpg", alt="")
+                                img.img-responsive(src="images/woman2.jpg", alt="")
                                 .caption
                                     h3 Yoga Practice
-                                    p Slow down. Stabilize your inner compass. Tune into your intuition. Build your strength. Absorb the knowlege of experienced teachers.
-                                    p Beginning and advanced learners are a
-                                        a(href="#", id="link5", onclick="showContent('par4', 'par5', 'span3', 'link6', this); return false;") ...more
-                                        span(style="visibility: hidden", id="span3")
-                                            |pproached individually. Classes are available throughout the day, in an open beachfront studio.
-                                    p(style="display:none", id="par4") Increasing research show the effectiveness of yoga in maintaining and restoring physical health, emotional balance and sense of self.
-                                    p(style="display:none", id="par5") Go Healthy vacations include daily yoga practice. Start planning. Choose your hotel.&nbsp
+                                    p Slow down. Stabilize your inner compass. Tune into your intuition. Build your strength. Absorb the knowledge of experienced instructors.
+                                    p In each class, teachers approach both beginning and advanced learners individually.
+                                        |Classes are available throughout the day and take place in an open beachfront studio.
+
+                                    p Increasing research shows the effectiveness of yoga in maintaining and restoring physical health, emotional balance, and sense of self.
+                                    p Go Healthy vacations include daily yoga practice. Start planning. Reserve your hotel room by&nbsp
                                         a(href="#") booking now
-                                        | .&nbsp
-                                        a(href="#", id="link6", onclick="hideContent('par4', 'par5', 'span3', 'link5', this); return false;") ...less
+                                        |.&nbsp
+
+                                    //a(href="#", id="link5", onclick="showContent('par4', 'par5', 'span3', 'link6', this); return false;") ...more
+                                    //    span(style="visibility: hidden", id="span3")
+                                    //p(style="display:none", id="par4") Increasing research show the effectiveness of yoga in maintaining and restoring physical health, emotional balance and sense of self.
+                                    //p(style="display:none", id="par5")
+                                    //a(href="#", id="link6", onclick="hideContent('par4', 'par5', 'span3', 'link5', this); return false;") ...less
+
+
+
+                    .row
+                        .col-md-12.margin-bottom-20
+                            .col-md-12.box-wide-blue-color-bg
+                                h3 WHY BOOK YOUR VACATIONS THROUGH GO HEALTHY
+                                p A healthy lifestyle is the only life we know. It serves as the sole focus behind the vacation packages we design. If your are going to take time away for vacations, Go Healthy. We are an exceptional guarantee of lifestyle authenticity and quality. We strive to impact, inspire and nourish your beneficial lifestyle going forward.
+                                    |Let’s Start the Conversation&nbsp
+                                    a(href="#") booking now
+                                    |.&nbsp
+
 
                     .row
                         .col-md-4
                             .thumbnail.thumbnail-box
-                                img.img-responsive(src="images/women3.jpg", alt="")
+                                img.img-responsive(src="images/woman3.jpg", alt="")
                                 .caption
                                     h3 Extras Activities
                                     p Enrich your stay in Playa del Carmen beyond the already included healthy lifestyles featured in every vacations.
-                                        |Choose from a diverse range of activities from discovery
-                                        a(href="#", id="link7", onclick="showContent('par6', 'par7', 'span4', 'link8', this); return false;") ...more
-                                        span(style="visibility: hidden", id="span4") &nbsptours and cenotes to golf, to diving or sky diving, and learning transcendental meditation.
-                                    p(style="display:none", id="par6") Or discover the traditional heritage of the Mayan culture and with visits to their communities and participation in Mayan rituals.
-                                    p(style="display:none", id="par7") Extra activities are planned after your have booked your Go Healthy vacations. Start planning. Choose your hotel.&nbsp
+                                        |Choose from a diverse range of activities from discovery tours and cenote swimming to golf, sky-diving, and practicing transcendental meditation.
+
+                                    p Or discover the traditional heritage of the Mayan culture with visits to their cultural sites and participation in ancient Mayan rituals.
+                                    p Extra activities are planned after your have booked your Go Healthy vacations. Start planning. Reserve your hotel room by&nbsp
                                         a(href="#") booking now
-                                        | .&nbsp
-                                        a(href="#", id="link8", onclick="hideContent('par6', 'par7', 'span4', 'link7', this); return false;") ...less
+                                        |.&nbsp
+
+                                    //a(href="#", id="link7", onclick="showContent('par6', 'par7', 'span4', 'link8', this); return false;") ...more
+                                    //    span(style="visibility: hidden", id="span4") &nbsptours and cenotes to golf, to diving
+                                    //p(style="display:none", id="par6") Or discover the traditional heritage of the Mayan culture and with visits to their communities and participation in Mayan rituals.
+                                    //p(style="display:none", id="par7")
+                                    //a(href="#", id="link8", onclick="hideContent('par6', 'par7', 'span4', 'link7', this); return false;") ...less
 
                         .col-md-8
                             img.img-responsive(src="images/surfing1.jpg", alt="")
@@ -294,21 +318,34 @@ html(lang='en')
                         .col-md-4
                             .thumbnail.thumbnail-box.thumbnail-bordered
                                 .caption
-                                    h3 Hoteliers and Property Owners
-                                    p Lorem ipsum dolor
+                                    h3.text-uppercase
+                                        strong Hoteliers and Property Owners
+                                    p Promote wellness vacations to your groups and individual clients in Playa del Carmen.
+                                        |Let's start working together. Go Healthy Travel is the only full service wellness vacations provider in Playa del Carmen.
+                                        |Your clients will love you for it. “Healthy vacations last forever!”
 
 
                         .col-md-4
                             .thumbnail.thumbnail-box.thumbnail-bordered
                                 .caption
-                                    h3.text-uppercase Travel Professionals
-                                    p Lorem ipsum dolor
+                                    h3.text-uppercase
+                                        strong Travel Professionals
+                                    p Promote wellness vacations to your groups and individual clients in Playa del Carmen.
+                                        |Let's start working together. Go Healthy Travel is the only full service wellness vacations provider in Playa del Carmen.
+                                        |Your clients will love you for it. “Healthy vacations last forever!”
 
                         .col-md-4
                             .thumbnail.thumbnail-box.thumbnail-bordered
                                 .caption
-                                    h3 General Information
-                                    p Lorem ipsum dolor
+                                    h3.text-uppercase
+                                        strong Contact and reservations
+                                    p Chat with us now
+                                    p Email&nbsp
+                                        a(href="mailto:inbox@gohealthy.travel") inbox@gohealthy.travel
+                                    p Phone: +52 1 984 202 2249
+                                    p Reserve your hotel room online by&nbsp
+                                        a(href="#") booking now
+                                        |.&nbsp
 
             .row
                 footer
@@ -333,6 +370,6 @@ html(lang='en')
 
 
 
-        //script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
-        //script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
 
