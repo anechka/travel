@@ -1,5 +1,5 @@
 .box-blue-color-bg, .box-wide-blue-color-bg {
-  background: #235f88; /*  #24678F; */
+  background: @box-blue-bg; /*  #24678F; */
 }
 
 .box-wide-blue-color-bg {
@@ -34,11 +34,11 @@
 
 
   a.link-place-name {
-    color:  #FFC83F; /* #4991bc */
+    color:  @link-place-name-color; /* #4991bc */
     font-weight: 400;
     text-decoration: underline;
     &:hover {
-      color: #FFC83F; /* #2cded8; */
+      color: @link-place-name-color; /* #2cded8; */
       text-decoration: none;
     }
   }
@@ -50,7 +50,7 @@
 }
 
 .block-right-border {
-  border-right: 1px solid #457A9B;
+  border-right: 1px solid @block-right-border-color;
   padding-left: 40px;
   padding-right: 40px;
   @media (max-width: 992px) {
@@ -58,7 +58,7 @@
     padding: 0;
 
     border-right: none;
-    border-bottom: 1px solid #457A9B;
+    border-bottom: 1px solid @block-right-border-color;
     &.no-border-bottom {
       border-bottom: none;
     }

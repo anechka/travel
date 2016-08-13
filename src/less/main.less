@@ -28,24 +28,34 @@
 }
 
 
-.box-logo {
-  position: absolute;
+.navigation {
+  background: transparent;
+  border: none;
   top: 17px;
-
   z-index: 1;
-  padding: 12px;
+
+  .logo-container {
+    padding: 0 15px 0 15px;
+    height: 110px;
+  }
 
   .logo {
     height: 80px;
   }
 
-  @media (max-width: 568px) {
-    margin-left: 30px;
-    left: 0;
-
+  .main-navbar {
+    float: right;
+    > li > a {
+      color: orange;
+    }
   }
 
-
+  .btn-toggle {
+    color: orange;
+    .icon-bars {
+      margin-left: 5px;
+    }
+  }
 }
 
 .slogan {
@@ -57,7 +67,7 @@
 
 
 .carousel-inner {
-  color: #24678F;
+  color: @text-main-color;
 }
 
 .carousel-control.control-left, .carousel-control.control-right{
@@ -70,7 +80,7 @@
 }
 
 .bg-woman-1 {
-  min-height: 530px;
+  min-height: 560px;
   background: url("../images/carouselslide/woman.jpg") 50% 85% no-repeat;
   background-size: cover;
   @media (max-width: 768px) {
@@ -80,7 +90,7 @@
 }
 
 .bg-surfing-3 {
-  min-height: 530px;
+  min-height: 560px;
   background: url("../images/carouselslide/surfing3.jpg") 50% 80% no-repeat;
   background-size: cover;
   @media (max-width: 768px) {
@@ -90,7 +100,7 @@
 }
 
 .bg-surfing-5 {
-  min-height: 530px;
+  min-height: 560px;
   background: url("../images/carouselslide/surfing5.jpg") 50% 50% no-repeat;
   background-size: cover;
   @media (max-width: 768px) {
@@ -100,7 +110,7 @@
 }
 
 .bg-women {
-  min-height: 530px;
+  min-height: 560px;
   background: url("../images/carouselslide/women.jpg") 50% 40% no-repeat;
   background-size: cover;
   @media (max-width: 768px) {
@@ -110,7 +120,7 @@
 }
 
 .bg-cafe-beach {
-  min-height: 530px;
+  min-height: 560px;
   background: url("../images/carouselslide/cafe_beach.jpg") 50% 70% no-repeat;
   background-size: cover;
   @media (max-width: 768px) {
@@ -134,7 +144,7 @@
 
     > p {
       font-size: 22px;
-      color: #24678F;
+      color: @text-main-color;
       margin: 0;
     }
 
@@ -164,7 +174,7 @@
 
   &.slide-1 {
 
-    margin-top: 190px;
+    margin-top: 230px;
     min-height: 210px;
     width: 430px;
 
@@ -185,7 +195,7 @@
 
   &.slide-2, &.slide-3, &.slide-4, &.slide-5 {
     float: right;
-    margin-top: 190px;
+    margin-top: 230px;
     min-height: 210px;
     width: 600px;
 

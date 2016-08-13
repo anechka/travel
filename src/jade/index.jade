@@ -74,16 +74,18 @@ html(lang='en')
         link(href="css/main.css", rel='stylesheet')
     body
         .container-fluid
-
             header
                 .row
                     .col-md-12.gutter-0
-                        .container
-                            .row
-                                .col-md-4.gutter-0.box-logo
-                                    a(href="index.html")
-                                        img.logo(src="images/gohealthy-logo.png")
-                        #carousel-content.carousel.slide(data-ride='carousel')
+                        nav.navbar.navbar-default.navigation
+                            .container
+                                .row
+                                    .navbar-header.logo-container
+                                        a.navbar-brand.logo-brand(href="index.html")
+                                            img.logo(src="images/gohealthy-logo.png")
+
+
+                        #carousel-content.carousel.slide(data-ride='carousel', style="position: relative; top: -158px")
                             // Indicators
                             ol.carousel-indicators
                                 li.active(data-target='#carousel-content', data-slide-to='0')
@@ -172,7 +174,7 @@ html(lang='en')
 
 
             section#main_content
-                .container
+                .container(style="position: relative; top: -158px")
                     .row
                         .col-md-12
                             .col-md-12.box-blue-color-bg.box-what-included
