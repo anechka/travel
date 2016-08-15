@@ -102,12 +102,12 @@ html(lang='en')
                                                 .col-md-4.box-description.box-white-color-bg.slide-1
                                                     h2 Healthy Vacations
                                                         br
-                                                        |Last Forever!
+                                                        .color
+                                                            |Last Forever!
 
                                                     p Vacation packages feature healthy lifestyles in Playa del Carmen
 
-
-                                                    button.btn.btn-default.btn-lg.pull-right(type="button") BOOK NOW
+                                                    a.btn.btn-default.btn-lg.pull-right(href="../reserve/", target="_blank") RESERVATIONS
 
 
                                 .item
@@ -118,11 +118,12 @@ html(lang='en')
 
                                                         h2 Healthy Lifestyle Vacations Are:
                                                             br
-                                                            |Enjoyable and Nurturing
+                                                            .color
+                                                                |Enjoyable and Nurturing
 
                                                         p Enjoy deluxe suites, nutritious meals, yoga, bodywork rituals, and more!
 
-                                                        button.btn.btn-default.btn-lg.pull-right(type="button") BOOK NOW
+                                                        a.btn.btn-default.btn-lg.pull-right(href="../reserve/", target="_blank") RESERVATIONS
 
 
                                 .item
@@ -132,11 +133,12 @@ html(lang='en')
                                                 .col-md-4.box-description.box-white-color-bg.slide-3
                                                     h2 Healthy Lifestyle Vacations Are:
                                                         br
-                                                        |Engaging and Renewing
+                                                        .color
+                                                            |Energizing and Renewing
 
                                                     p Enrich your experience with many activities to choose from.
 
-                                                    button.btn.btn-default.btn-lg.pull-right(type="button") BOOK NOW
+                                                    a.btn.btn-default.btn-lg.pull-right(href="../reserve/", target="_blank") RESERVATIONS
 
                                 .item
                                     .col-md-12.bg-women
@@ -145,11 +147,13 @@ html(lang='en')
                                                 .col-md-4.box-description.box-white-color-bg.slide-4
                                                     h2 Healthy Lifestyle Vacations Are:
                                                         br
-                                                        |Educational and Fun
+                                                        .color
+                                                            |Educational and Fun
 
                                                     p Discover the advanced Mayan culture and its purification rituals.
 
-                                                    button.btn.btn-default.btn-lg.pull-right(type="button") BOOK NOW
+                                                    a.btn.btn-default.btn-lg.pull-right(href="../reserve/", target="_blank") RESERVATIONS
+
 
                                 .item
                                     .col-md-12.bg-cafe-beach
@@ -158,11 +162,12 @@ html(lang='en')
                                                 .col-md-4.box-description.box-white-color-bg.slide-5
                                                     h2 Healthy Lifestyle Vacations Are:
                                                         br
-                                                        |Relevant and Cross-Generation
+                                                        .color
+                                                            |Relevant and Cross-Generational
 
                                                     p Activities for all ages and a healthy vacation for the whole family
 
-                                                    button.btn.btn-default.btn-lg.pull-right(type="button") BOOK NOW
+                                                    a.btn.btn-default.btn-lg.pull-right(href="../reserve/", target="_blank") RESERVATIONS
 
                             // Controls
                             a.left.carousel-control.control-left(href='#carousel-content', role='button', data-slide='prev')
@@ -181,7 +186,7 @@ html(lang='en')
                             .col-md-12.box-light-blue-color-bg.box-what-included
                                 .row
                                     .col-md-4.padding-left-right-40
-                                        h5.text-uppercase text
+                                        h5.text-uppercase "Healthy vacations last forever!"
                     .row
                         .col-md-12
                             .col-md-12.box-blue-color-bg.box-what-included
@@ -189,9 +194,9 @@ html(lang='en')
                                     .col-md-4.block-right-border
                                         h5.text-uppercase Deluxe Rooms for Your Vacations
                                         p Go Healthy participating properties are located at walking distance from our restaurant and healthy activity areas:&nbsp
-                                            a.link-place-name(href="#") Thompson Beach House
+                                            a.link-place-name(href="thompson-beach-house.html") Thompson Beach House
                                             |,&nbsp
-                                            a.link-place-name(href="#") 5th Ave Playa
+                                            a.link-place-name(href="thompson-beach-house.html") 5th Ave Playa
                                             |,&nbsp
                                             a.link-place-name(href="#") The Elements
                                             |.&nbsp
@@ -201,17 +206,15 @@ html(lang='en')
                                             a.link-place-name(href="#") Playa del Carmen
                                             |.
                                         p
-                                            a(href="../reserve/index.html") Book Now
+                                            a(href="../reserve/", target="_blank") Reserve Your Package
                                             span.glyphicon.glyphicon-chevron-right.icon-chevron(aria-hidden="true")
 
                                     .col-md-4.block-right-border
-                                        h5.text-uppercase Daily Healthy Lifestyle Features
+                                        h5.text-uppercase Daily Healthy Lifestyles Included
                                         p Included: Nutritious breakfast, lunch and dinner. Yoga classes. Bodywork ritual.
-                                            |Meals and yoga classes are offered at the only healthy lifestyle beachfront lounge and studio in Playa del Carmen.&nbsp
-                                            a.link-place-name(href="#") Playa del Carmen.
-
+                                            |Meals and yoga classes are offered at the only healthy lifestyle beachfront lounge and studio in Playa del Carmen
                                         p
-                                            a(href="#") Book Now
+                                            a(href="../reserve/", target="_blank") Reserve Your Package
                                             span.glyphicon.glyphicon-chevron-right.icon-chevron(aria-hidden="true")
 
                                     .col-md-4.block-right-border.no-border-bottom
@@ -233,9 +236,10 @@ html(lang='en')
                                         |achieve and maintain your ideal body weight, enhance exercise performance, and generally sustain a healthy life.
                                         |The benefits of this kind of diet are astounding.
 
-                                    p Go Healthy vacations include whole-food, plant-based cuisine. Start planning. Reserve your hotel room by&nbsp
-                                        a(href="#") booking now
-                                        |.&nbsp
+                                    p Go Healthy vacations include whole-food, plant-based cuisine. Start here.
+                                        br
+                                        a.reserve-hotel(href="../reserve/", target="_blank" ) Reserve Your Package
+
                                         //p(style="display:none", id="par1")
                                         //a(href="#", id="link1", onclick="showStuff('par1', 'span1', 'link2', this); return false;") ...more
                                         //span(style="visibility: hidden", id="span1")
@@ -249,11 +253,11 @@ html(lang='en')
                                     p Discover a new depth of serenity and awareness through our uniquely orchestrated massage techniques.
                                     p Signature, restorative massage remedies leave long-lasting benefits in the body, mind, and spirit.
                                     p Massage treatments alternate daily with Body Rituals that include high vibration and organic essential oils
-                                        |that are concentrated on pressure points and energy centres, w
-                                        |hich bring about a sense of deep release, balance, and connection.
-                                    p Go Healthy vacations include massages and body rituals. Start planning. Reserve your hotel room by&nbsp
-                                        a(href="#") booking now
-                                        |.&nbsp
+                                        |that are concentrated on pressure points and energy centres, which bring about a sense of deep release, balance, and connection.
+                                    p Go Healthy vacations include massages and body rituals. Start here.
+                                        br
+                                        a.reserve-hotel(href="../reserve/", target="_blank") Reserve Your Package
+
 
                                     //a(href="#", id="link3", onclick="showContent('par2', 'par3', 'span2', 'link4', this); return false;") ...more
                                     //    span(style="visibility: hidden", id="span2")
@@ -271,9 +275,10 @@ html(lang='en')
                                         |Classes are available throughout the day and take place in an open beachfront studio.
 
                                     p Increasing research shows the effectiveness of yoga in maintaining and restoring physical health, emotional balance, and sense of self.
-                                    p Go Healthy vacations include daily yoga practice. Start planning. Reserve your hotel room by&nbsp
-                                        a(href="#") booking now
-                                        |.&nbsp
+                                    p Go Healthy vacations include daily yoga practice. Start here.
+                                        br
+                                        a.reserve-hotel(href="../reserve/", target="_blank") Reserve Your Package
+
 
                                     //a(href="#", id="link5", onclick="showContent('par4', 'par5', 'span3', 'link6', this); return false;") ...more
                                     //    span(style="visibility: hidden", id="span3")
@@ -285,27 +290,28 @@ html(lang='en')
 
                     .row
                         .col-md-12.margin-bottom-20
-                            .col-md-12.box-wide-blue-color-bg
-                                h3 WHY BOOK YOUR VACATIONS THROUGH GO HEALTHY
-                                p A healthy lifestyle is the only life we know. It serves as the sole focus behind the vacation packages we design. If your are going to take time away for vacations, Go Healthy. We are an exceptional guarantee of lifestyle authenticity and quality. We strive to impact, inspire and nourish your beneficial lifestyle going forward.
-                                    |Let’s Start the Conversation&nbsp
-                                    a(href="#") booking now
-                                    |.&nbsp
-
+                            .col-md-12.box-wide-blue-color-bg.why-book-go-healthy
+                                h3 Why Book With Us
+                                p A healthy lifestyle is the only life we know.
+                                    |It serves as the sole focus behind the vacation packages we design.
+                                    |If your are going to take time away for vacations, why not Go Healthy? We are an exceptional guarantee of lifestyle authenticity and quality.
+                                    |"Healthy vacations last forever!" We strive to impact, inspire and nourish your beneficial lifestyle going forward.
+                                    |Let’s start the conversation.
 
                     .row
                         .col-md-4
                             .thumbnail.thumbnail-box
                                 img.img-responsive(src="images/woman3.jpg", alt="")
                                 .caption
-                                    h3 Extras Activities
+                                    h3 Optional Activities
                                     p Enrich your stay in Playa del Carmen beyond the already included healthy lifestyles featured in every vacations.
                                         |Choose from a diverse range of activities from discovery tours and cenote swimming to golf, sky-diving, and practicing transcendental meditation.
 
                                     p Or discover the traditional heritage of the Mayan culture with visits to their cultural sites and participation in ancient Mayan rituals.
-                                    p Extra activities are planned after your have booked your Go Healthy vacations. Start planning. Reserve your hotel room by&nbsp
-                                        a(href="#") booking now
-                                        |.&nbsp
+                                    p Optional activities may be planned after your have reserved your Go Healthy package. Start here.
+                                        br
+                                        a.reserve-hotel(href="../reserve/", target="_blank") Reserve Your Package
+
 
                                     //a(href="#", id="link7", onclick="showContent('par6', 'par7', 'span4', 'link8', this); return false;") ...more
                                     //    span(style="visibility: hidden", id="span4") &nbsptours and cenotes to golf, to diving
@@ -316,13 +322,50 @@ html(lang='en')
                         .col-md-8
                             img.img-responsive(src="images/surfing1.jpg", alt="")
 
-                    .row
-                        .col-md-12.margin-bottom-20.margin-top-20
-                            strong Editorial Note:&nbsp
-                            |The pictures on this website are spontaneous, not staged. We believe in the power of authenticity that a healthy lifestyle can bring.
-                            |Special thanks to those who allow us to use their personal pictures to achieve this goal.
 
-                            |Always remember, "healthy vacations last forever!”.
+                    .row
+                        .col-md-4
+                            .thumbnail.thumbnail-box.thumbnail-bordered
+                                .caption
+                                    h3.text-uppercase
+                                        strong Hoteliers and Property Owners
+                                    p Go Healthy Travel welcomes select or luxury property owners in Playa del Carmen, Tulum, Los Cabos, and Nuevo Vallarta.
+                                        |Contact us to explore options for hosting Go Healthy guests at your property or bringing the benefits of the Go Healthy lifestyles to your clients.
+
+
+                        .col-md-4
+                            .thumbnail.thumbnail-box.thumbnail-bordered
+                                .caption
+                                    h3.text-uppercase
+                                        strong Travel Professionals
+                                    p Promote wellness vacations to your groups and individual clients in Playa del Carmen.
+                                        |Let's start working together. Go Healthy Travel is the only full service wellness vacations provider in Playa del Carmen.
+                                        |Your clients will love you for it. “Healthy vacations last forever!”
+
+                        .col-md-4
+                            .thumbnail.thumbnail-box.thumbnail-bordered
+                                .caption
+                                    h3.text-uppercase
+                                        strong Come to Playa del Carmen
+                                    p Chat with us. We are happy to help. Chat is open from 8:00 am to 8:00 pm, Playa Time.
+                                    p Email:&nbsp
+                                        a(href="mailto:inbox@gohealthy.travel") inbox@gohealthy.travel
+                                        br
+                                        |Mobile and Whatsapp: +52 1 984 202 2249
+                                    p
+                                        a.reserve-hotel(href="../reserve/", target="_blank") Reserve Online
+                                        span.glyphicon.glyphicon-chevron-right.icon-chevron(aria-hidden="true")
+
+
+                    .row
+                        .col-md-12.margin-bottom-30.margin-top-10.grey
+                            strong EDITORIAL NOTE.&nbsp
+                            | The pictures on this website are spontaneous, not staged. We believe in the power of authenticity that a healthy lifestyle can bring.
+                            | Special thanks to those who allow us to use their personal pictures to achieve this goal.
+
+                            | Always remember, "healthy vacations last forever!”.
+
+
 
 
                     .row
@@ -332,7 +375,7 @@ html(lang='en')
                                     .col-md-8
                                         .row
                                             .col-md-12
-                                                h3 Lets Start The conversation
+                                                h3 Lets Start The Conversation
                                                 p Lorem ipsum dolor
 
 
@@ -391,38 +434,7 @@ html(lang='en')
                                             button.btn.btn-default(type="submit") GO
 
 
-                    .row
-                        .col-md-4
-                            .thumbnail.thumbnail-box.thumbnail-bordered
-                                .caption
-                                    h3.text-uppercase
-                                        strong Hoteliers and Property Owners
-                                    p Promote wellness vacations to your groups and individual clients in Playa del Carmen.
-                                        |Let's start working together. Go Healthy Travel is the only full service wellness vacations provider in Playa del Carmen.
-                                        |Your clients will love you for it. “Healthy vacations last forever!”
 
-
-                        .col-md-4
-                            .thumbnail.thumbnail-box.thumbnail-bordered
-                                .caption
-                                    h3.text-uppercase
-                                        strong Travel Professionals
-                                    p Promote wellness vacations to your groups and individual clients in Playa del Carmen.
-                                        |Let's start working together. Go Healthy Travel is the only full service wellness vacations provider in Playa del Carmen.
-                                        |Your clients will love you for it. “Healthy vacations last forever!”
-
-                        .col-md-4
-                            .thumbnail.thumbnail-box.thumbnail-bordered
-                                .caption
-                                    h3.text-uppercase
-                                        strong Contact and reservations
-                                    p Chat with us now
-                                    p Email&nbsp
-                                        a(href="mailto:inbox@gohealthy.travel") inbox@gohealthy.travel
-                                    p Phone: +52 1 984 202 2249
-                                    p Reserve your hotel room online by&nbsp
-                                        a(href="#") booking now
-                                        |.&nbsp
 
             .row
                 footer
@@ -433,7 +445,7 @@ html(lang='en')
 
                                 ul.list-unstyled.list-inline.footer-nav
                                     li
-                                        a(href="http://gohealthy.travel/reserve/") Bookings
+                                        a(href="http://gohealthy.travel/reserve/", target="_blank") Bookings
 
                                     li
                                         a(href="http://gohealthy.travel/privacy.html", target="_blank") Privacy
@@ -441,9 +453,9 @@ html(lang='en')
                                     li
                                         a(href="http://gohealthy.travel/terms.html", target="_blank") Terms
 
-                            .col-md-9 Go Healthy Travel.&nbsp
-                                span.wellness Wellness Tourism&nbsp
-                                |by Cape May Global Partners.
+                            .col-md-9 We create&nbsp
+                                span.wellness wellness experiences&nbsp
+                                |with long lasting benefits.
 
 
 
