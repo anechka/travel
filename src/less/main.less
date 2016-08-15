@@ -11,6 +11,11 @@
   padding-right: 0;
 }
 
+.margin-top-0 {
+  margin-top: 0;
+}
+
+
 .margin-top-15 {
   margin-top: 15px;
 }
@@ -31,12 +36,18 @@
   margin-bottom: 30px;
 }
 
+.margin-top-40 {
+  margin-top: 40px;
+}
+
 .padding-left-right-40 {
 
   padding-right: 40px;
   padding-left: 40px;
 
 }
+
+/*NAVIGATION BEGIN*/
 
 
 .navigation {
@@ -69,6 +80,8 @@
   }
 }
 
+/*NAVIGATION END*/
+
 .slogan {
   font-size: 36px;
   font-weight: bold;
@@ -76,9 +89,11 @@
   color: @slogan-color;
 }
 
+/*CAROUSEL BEGIN*/
+
 
 .carousel-inner {
-  color: @text-main-color;
+  color: @carousel-inner-text-color;
 }
 
 .carousel-control.control-left, .carousel-control.control-right{
@@ -89,6 +104,8 @@
 .carousel-control.control-left, .carousel-control.control-right{
   background-image: none;
 }
+
+
 
 .bg-woman-1 {
   min-height: 560px;
@@ -151,11 +168,13 @@
     h2 {
       font-size: 38px;
       font-weight: normal;
+      color: #FFF;
     }
 
     > p {
       font-size: 22px;
-      color: @text-main-color;
+      color: #FFF;
+      font-weight: 300;
       margin: 0;
     }
 
@@ -171,7 +190,7 @@
       background-color: @btn-book-now-bg;
       border-color: @btn-book-now-bg;
 
-      color: @btn-book-now-text;
+      color: @carousel-inner-text-color;
 
       &:hover {
         background-color: @btn-book-now-hover-bg;
@@ -187,12 +206,27 @@
 
     margin-top: 230px;
     min-height: 210px;
-    width: 430px;
+    width: 600px; /* 430px; */
+
+
+    @media (min-width: 601px) and (max-width: 768px){
+      width: 580px;
+
+    }
+
+    @media (min-width: 569px) and (max-width: 600px){
+      width: 550px;
+
+    }
+
+    @media (min-width: 481px) and (max-width: 568px){
+      width: 460px;
+
+    }
 
     @media (max-width: 480px) {
-      min-height: 290px;
+      min-height: 420px;
       width: 300px;
-
     }
 
     h2 {
@@ -246,18 +280,78 @@
 
 }
 
+
+/*CAROUSEL END*/
+
+.caption.color-white h3,
+.caption.color-white p {
+  color: white;
+  font-weight: 100;
+}
+
+.bonbon {
+  background-color: #88235f;
+  color: white;
+}
+
+a.reserve-hotel {
+  font-size: 15px;
+  font-weight: 300;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+}
+
+.why-book-go-healthy {
+  color: #FFF;
+  background-color:#88235f;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 30px 50px;
+}
+.why-book-go-healthy h3 {
+  font-size: 24px;
+  font-weight: 100;
+}
+
 .box-color-media-transparent {
   @media (max-width: 568px) {
     background: transparent;
   }
 }
 
-.box-white-color-bg {
-  background: rgba(255, 255, 255, 0.8);
+.box-brown-color-bg {
+  background: rgba(22, 22, 2,0.6);
+  .color {
+    display: inline;
+    color: #ff1a1a;
+    font-size: 36px;
+    line-height: 44px;
+  }
 }
 
 .box-wood-color-bg {
   background: rgba(74, 44, 22, 0.6);
   .box-color-media-transparent;
 }
+
+.grey {
+  color: #737373;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.bg-black {
+  background-color: #35527c;
+  color: #fff;
+}
+
+/*
+DOCUMENTATION ON BACKGROUND FROM MOZILLA
+
+background: -moz-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)),
+-webkit-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)),
+-ms-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)),
+linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+
+*/
 

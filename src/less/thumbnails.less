@@ -1,4 +1,5 @@
 
+/*THUMBNAILS BEGIN*/
 .thumbnail.thumbnail-box {
   padding: 0;
   border: none;
@@ -19,6 +20,7 @@
 .thumbnail.thumbnail-box .caption {
   color: @thumbnail-caption-color;
   font-size: 15px;
+  font-weight: 300;
   border-color:  @thumb-border-color;
   padding: 0;
 
@@ -28,11 +30,15 @@
 
   A {
     color: @thumbnail-a-color;
+    font-weight: 400;
     &:hover {
-      color: saturate(@thumbnail-a-color, 30%);
+      color: #88235f; /* #22dc22; */
+      text-decoration: none;
     }
 
-    text-decoration: underline;
+
   }
 
 }
+
+/*THUMBNAILS END*/
