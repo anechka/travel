@@ -16,6 +16,7 @@
   "license": "MIT",
   "homepage": "ane4k.in",
   "dependencies": {
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "riot": "^2.5.0"
   }
 }

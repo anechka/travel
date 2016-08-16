@@ -399,47 +399,7 @@ html(lang='en')
                                                         p Lorem ipsum dolor
 
                                     .col-md-4(style="padding: 15px; border: 1px solid lightgrey")
-                                        form
-                                            .form-group
-                                                label(for='InputEmail1', class="sr-only") Your email
-                                                input#InputEmail1.form-control(type='email', placeholder='Your email')
-                                            .form-group
-                                                label(for='InputName', class="sr-only") Name
-                                                input#InputName.form-control(type='text', placeholder='Name')
-
-                                            label.radio-inline
-                                                input#Radio1(type='radio', name='inlineRadioOptions', value='option1')
-                                                |  Female
-                                            label.radio-inline
-                                                input#Radio2(type='radio', name='inlineRadioOptions', value='option2')
-                                                |  Male
-
-                                            .form-group.margin-top-15
-                                                label(for='InputCity', class="sr-only") City/State
-                                                input#InputCity.form-control(type='text', placeholder='City/State')
-                                            .form-group
-                                                label(for='Inputcountry', class="sr-only") Country
-                                                input#Inputcountry.form-control(type='tetx', placeholder='Country')
-
-                                            textarea.form-control(rows="5")
-
-                                            .form-group.margin-top-15
-
-                                                p Travel Professional?
-
-                                                label.radio-inline
-                                                    input#Radio3(type='radio', name='inlineRadioOptions', value='option3')
-                                                    |  Yes
-                                                label.radio-inline
-                                                    input#Radio4(type='radio', name='inlineRadioOptions', value='option4')
-                                                    |  No
-
-
-                                            button.btn.btn-default(type="submit") GO
-
-
-
-
+                                        form-tag
             .row
                 footer
                     .container
@@ -461,8 +421,10 @@ html(lang='en')
                                 span.wellness wellness experiences&nbsp
                                 |with long lasting benefits.
 
-
-
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+        script(src="../bower_components/riot/riot+compiler.js")
 
+        script(src="js/form.js", type="riot/tag")
+        script(type="text/javascript").
+            riot.mount("form-tag");
