@@ -6,58 +6,6 @@ html(lang='en')
         meta(name='viewport', content='width=device-width, initial-scale=1')
         // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
         title Go Healthy Travel - Playa del Carmen, Riviera Maya
-        script(type='text/javascript').
-            function showStuff(id1, text, el2, el) {
-                //show paragraph
-                document.getElementById(id1).style.display = 'block';
-                // show the text
-                document.getElementById(text).style.visibility = 'visible';
-                //show the link ...less
-                document.getElementById(el2).style.display = 'inline-block';
-                // hide the link ...more
-                el.style.display = 'none';
-            }
-
-            function hideStuff(id1, text, el2, el) {
-
-                //hide paragraph
-                document.getElementById(id1).style.display = 'none';
-                // hide the text
-                document.getElementById(text).style.visibility = 'hidden';
-                //show the link ...more
-                document.getElementById(el2).style.display = 'inline-block';
-                // hide the link ...less
-                el.style.display = 'none';
-
-            }
-
-            function showContent(id1, id2, text, el2, el) {
-                //show paragraph
-                document.getElementById(id1).style.display = 'block';
-                //show paragraph
-                document.getElementById(id2).style.display = 'block';
-                // show the text
-                document.getElementById(text).style.visibility = 'visible';
-                //show the link ...less
-                document.getElementById(el2).style.display = 'inline-block';
-                // hide the link ...more
-                el.style.display = 'none';
-            }
-
-            function hideContent(id1, id2, text, el2, el) {
-
-                //hide paragraph
-                document.getElementById(id1).style.display = 'none';
-                //hide paragraph
-                document.getElementById(id2).style.display = 'none';
-                // hide the text
-                document.getElementById(text).style.visibility = 'hidden';
-                //show the link ...more
-                document.getElementById(el2).style.display = 'inline-block';
-                // hide the link ...less
-                el.style.display = 'none';
-
-            }
 
         link(href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500", rel='stylesheet', type='text/css')
         link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel="stylesheet")
@@ -241,11 +189,6 @@ html(lang='en')
                                         a.reserve-hotel(href="../reserve/", target="_blank" ) Reserve Your Package
                                             span.glyphicon.glyphicon-chevron-right.icon-chevron(aria-hidden="true")
 
-                                        //p(style="display:none", id="par1")
-                                        //a(href="#", id="link1", onclick="showStuff('par1', 'span1', 'link2', this); return false;") ...more
-                                        //span(style="visibility: hidden", id="span1")
-                                        //a(href="#", id="link2", onclick="hideStuff('par1', 'span1', 'link1', this); return false;") ...less
-
                         .col-md-4
                             .thumbnail.thumbnail-box
                                 img.img-responsive(src="images/meditation.jpg", alt="")
@@ -260,12 +203,6 @@ html(lang='en')
                                         a.reserve-hotel(href="../reserve/", target="_blank") Reserve Your Package
                                             span.glyphicon.glyphicon-chevron-right.icon-chevron(aria-hidden="true")
 
-
-                                    //a(href="#", id="link3", onclick="showContent('par2', 'par3', 'span2', 'link4', this); return false;") ...more
-                                    //    span(style="visibility: hidden", id="span2")
-                                    //p(style="display:none", id="par2")
-                                    //p(style="display:none", id="par3")
-                                    //a(href="#", id="link4", onclick="hideContent('par2', 'par3', 'span2', 'link3', this); return false;") ...less
 
                         .col-md-4
                             .thumbnail.thumbnail-box
@@ -283,13 +220,6 @@ html(lang='en')
                                             span.glyphicon.glyphicon-chevron-right.icon-chevron(aria-hidden="true")
 
 
-                                    //a(href="#", id="link5", onclick="showContent('par4', 'par5', 'span3', 'link6', this); return false;") ...more
-                                    //    span(style="visibility: hidden", id="span3")
-                                    //p(style="display:none", id="par4") Increasing research show the effectiveness of yoga in maintaining and restoring physical health, emotional balance and sense of self.
-                                    //p(style="display:none", id="par5")
-                                    //a(href="#", id="link6", onclick="hideContent('par4', 'par5', 'span3', 'link5', this); return false;") ...less
-
-
 
                     .row
                         .col-md-12.margin-bottom-20
@@ -304,7 +234,7 @@ html(lang='en')
                     .row
                         .col-md-4
                             .thumbnail.thumbnail-box
-                                img.img-responsive(src="images/woman3.jpg", alt="")
+                                img.img-responsive(src="images/swim-with-the-turtle.png", alt="")
                                 .caption
                                     h3 Optional Activities
                                     p Enrich your stay in Playa del Carmen beyond the already included healthy lifestyles featured in every vacations.
@@ -316,12 +246,6 @@ html(lang='en')
                                         a.reserve-hotel(href="../reserve/", target="_blank") Reserve Your Package
                                             span.glyphicon.glyphicon-chevron-right.icon-chevron(aria-hidden="true")
 
-
-                                    //a(href="#", id="link7", onclick="showContent('par6', 'par7', 'span4', 'link8', this); return false;") ...more
-                                    //    span(style="visibility: hidden", id="span4") &nbsptours and cenotes to golf, to diving
-                                    //p(style="display:none", id="par6") Or discover the traditional heritage of the Mayan culture and with visits to their communities and participation in Mayan rituals.
-                                    //p(style="display:none", id="par7")
-                                    //a(href="#", id="link8", onclick="hideContent('par6', 'par7', 'span4', 'link7', this); return false;") ...less
 
                         .col-md-8
                             img.img-responsive(src="images/surfing1.jpg", alt="")
@@ -423,8 +347,8 @@ html(lang='en')
 
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
-        //-script(src="https://cdnjs.cloudflare.com/ajax/libs/riot/2.5.0/riot+compiler.min.js")
-        script(src="../bower_components/riot/riot+compiler.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/riot/2.5.0/riot+compiler.min.js")
+        //-script(src="../bower_components/riot/riot+compiler.js")
 
         script(src="js/ajax_controller.js")
         script(src="js/form.jsx", type="riot/tag")
