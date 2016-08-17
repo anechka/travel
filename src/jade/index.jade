@@ -423,8 +423,10 @@ html(lang='en')
 
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+        //-script(src="https://cdnjs.cloudflare.com/ajax/libs/riot/2.5.0/riot+compiler.min.js")
         script(src="../bower_components/riot/riot+compiler.js")
 
-        script(src="js/form.js", type="riot/tag")
+        script(src="js/ajax_controller.js")
+        script(src="js/form.jsx", type="riot/tag")
         script(type="text/javascript").
             riot.mount("form-tag");
