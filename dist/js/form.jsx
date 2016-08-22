@@ -8,7 +8,7 @@
             <label for="inputEmail" class="sr-only">Your email</label>
             <div class="input-group">
                 <span class="input-group-addon">@</span>
-                <input id="inputEmail" class="form-control" type="email" placeholder="Your email" data-error="Bruh, that email address is invalid" required>
+                <input id="inputEmail" class="form-control" type="email" placeholder="Your email" data-error="Sorry, that email address is invalid" required>
             </div>
             <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
             <div class="help-block with-errors"></div>
@@ -19,10 +19,10 @@
             <div class="help-block with-errors"></div>
         </div>
         <label class="radio-inline">
-            <input id="femaleRadio" type="radio" name="inlineRadioOptionsSex" value="female" required> Female
+            <input type="radio" name="inlineRadioOptionsSex" value="female" required> Female
         </label>
         <label class="radio-inline">
-            <input id="maleRadio" type="radio" name="inlineRadioOptionsSex" value="male"> Male
+            <input type="radio" name="inlineRadioOptionsSex" value="male"> Male
         </label>
         <div class="form-group margin-top-15">
             <label for="inputCity" class="sr-only">City/State</label>
@@ -33,14 +33,14 @@
             <input id="inputCountry" type="tetx" placeholder="Country" class="form-control" required>
         </div>
 
-        <textarea rows="5" class="form-control" required></textarea>
+        <textarea id="messageText" rows="5" class="form-control" required></textarea>
         <div class="form-group margin-top-15">
             <p>Travel Professional?</p>
             <label class="radio-inline">
-                <input id="yesRadio" type="radio" name="inlineRadioOptionsProfessional" value="yes" required> Yes
+                <input type="radio" name="inlineRadioOptionsProfessional" value="yes" required> Yes
             </label>
             <label class="radio-inline">
-                <input id="noRadio" type="radio" name="inlineRadioOptionsProfessional" value="no"> No
+                <input type="radio" name="inlineRadioOptionsProfessional" value="no"> No
             </label>
         </div>
 
@@ -71,12 +71,12 @@
         var self = this
 
         submit(e) {
-            console.log("Submitting");
+            console.log("Submitting riot.js from");
 
             if (e.isDefaultPrevented()) {
                 // handle the invalid form...
                 console.log("handle the invalid form")
-
+                alert("Please fill all text inputs in the form")
             } else {
                 // everything looks good!
                 console.log("everything looks good!")
@@ -85,7 +85,12 @@
                 // get data from controls
                 var data = {
                     username: self.userName.value,
-                    email: self.inputEmail.value
+                    email: self.inputEmail.value,
+                    sex: $(self.inlineRadioOptionsSex).filter(":checked").val(),
+                    city: self.inputCity.value,
+                    country: self.inputCountry.value,
+                    message: self.messageText.value,
+                    isProfessionalTarget: $(self.inlineRadioOptionsProfessional).filter(":checked").val()
                 };
                 // send data to server by controler
                 window.conrollers.ajax_form_controller(data);

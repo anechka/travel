@@ -9,15 +9,13 @@ window.conrollers = {
 
         $.post(service_uri, JSON.stringify(data), successHandler, "json").fail(function(e) {
             console.warn( e.responseText );
+            alert("Error in sending data to the server, please check Internet connection.");
         });
     }
 };
 
 successHandler = function (data) {
-    console.log("Callback is: ", data);
-
-    console.log(data["status"]);
-    console.log(data["username"]);
+    console.log("Incoming data from microservice is: ", data);
 
     alert(data["username"]);
 };
