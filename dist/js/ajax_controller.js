@@ -14,8 +14,17 @@ window.conrollers = {
     }
 };
 
-successHandler = function (data) {
+successHandler = function (data, status) {
     console.log("Incoming data from microservice is: ", data);
 
-    alert(data["username"]);
+    alert(status);
+
+    if ('status' in data  && data.status == "ok") {
+        $('#Modal').modal('show');
+    }
+
+    else {
+        alert("Enternal server error!");
+    }
+
 };
