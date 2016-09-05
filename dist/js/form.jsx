@@ -4,47 +4,42 @@
 <form-tag>
 
     <form if="{ !flag }" id="conversationForm">
+
+        <h3>Send us a message</h3>
+
         <div class="form-group has-feedback">
             <label for="inputEmail" class="sr-only">Your email</label>
-            <div class="input-group">
-                <span class="input-group-addon">@</span>
-                <input id="inputEmail" class="form-control" type="email" placeholder="Your email" data-error="Sorry, that email address is invalid" required>
-            </div>
+            <input id="inputEmail" class="form-control" type="email" placeholder="Your email" data-error="Sorry, that email address is invalid" required>
+
             <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
             <div class="help-block with-errors"></div>
         </div>
         <div class="form-group">
-            <label class="sr-only" for="userName">Name</label>
-            <input class="form-control" id="userName" type="text" placeholder="Name" data-minlength="3" required>
+            <label class="sr-only" for="userName">Your name</label>
+            <input class="form-control" id="userName" type="text" placeholder="Your name" data-minlength="3" required>
             <div class="help-block with-errors"></div>
         </div>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptionsSex" value="female" required> Female
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptionsSex" value="male"> Male
-        </label>
+
+        <textarea id="messageText" rows="5" class="form-control" placeholder="Message" required></textarea>
+
         <div class="form-group margin-top-15">
-            <label for="inputCity" class="sr-only">City/State</label>
-            <input id="inputCity" type="text" placeholder="City/State" class="form-control" required>
-        </div>
-        <div class="form-group">
             <label for="inputCountry" class="sr-only">Country</label>
             <input id="inputCountry" type="tetx" placeholder="Country" class="form-control" required>
         </div>
 
-        <textarea id="messageText" rows="5" class="form-control" required></textarea>
         <div class="form-group margin-top-15">
-            <p>Travel Professional?</p>
-            <label class="radio-inline">
-                <input type="radio" name="inlineRadioOptionsProfessional" value="yes" required> Yes
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="inlineRadioOptionsProfessional" value="no"> No
-            </label>
+            <p> GENDER:
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptionsSex" value="female" required> Female
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptionsSex" value="male"> Male
+                </label>
+            </p>
+
         </div>
 
-        <button type="submit" class="btn btn-default">GO</button>
+        <button type="submit" class="btn btn-default btn-go">GO</button>
     </form>
 
     <div class="jumbotron conversationFormMessageBox" if="{ flag }">

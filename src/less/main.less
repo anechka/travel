@@ -7,6 +7,7 @@
 @import "hotel_presentation";
 @import "forms";
 
+
 .gutter-0 {
   padding-left: 0;
   padding-right: 0;
@@ -58,8 +59,7 @@
   z-index: 1;
 
   .logo-container {
-    padding: 0 15px 0 15px;
-    height: 110px;
+    padding: 12px;
   }
 
   .logo {
@@ -90,96 +90,44 @@
   color: @slogan-color;
 }
 
-/*CAROUSEL BEGIN*/
-
-
-.carousel-inner {
-  color: @carousel-inner-text-color;
-}
-
-.carousel-control.control-left, .carousel-control.control-right{
-  visibility: hidden;
-}
-
-
-.carousel-control.control-left, .carousel-control.control-right{
-  background-image: none;
-}
-
-
-
-.bg-woman-1 {
-  min-height: 560px;
-  background: url("../images/carouselslide/woman.jpg") 50% 85% no-repeat;
+.banner-hotel {
+  min-height: 530px;
+  /* background: url("../images/carouselslide/woman.jpg") 50% 85% no-repeat; */
+  background: url("../images/carouselslide/Beach-House-Pool.jpg") 50% 85% no-repeat;
   background-size: cover;
-  @media (max-width: 768px) {
-    min-height: 720px;
-
-  }
+  margin-top: -120px;
 }
 
-.bg-surfing-3 {
-  min-height: 560px;
-  background: url("../images/carouselslide/surfing3.jpg") 50% 80% no-repeat;
+.yoga-banner {
+
+  min-height: 500px;
+  /* background: url("../images/carouselslide/woman.jpg") 50% 85% no-repeat; */
+  background: url("../images/yoga-in-playa-del-carmen.jpg") 50% 85% no-repeat;
   background-size: cover;
-  @media (max-width: 768px) {
-    min-height: 720px;
 
-  }
 }
-
-.bg-surfing-5 {
-  min-height: 560px;
-  background: url("../images/carouselslide/surfing5.jpg") 50% 50% no-repeat;
-  background-size: cover;
-  @media (max-width: 768px) {
-    min-height: 720px;
-
-  }
-}
-
-.bg-women {
-  min-height: 560px;
-  background: url("../images/carouselslide/women.jpg") 50% 40% no-repeat;
-  background-size: cover;
-  @media (max-width: 768px) {
-    min-height: 720px;
-
-  }
-}
-
-.bg-cafe-beach {
-  min-height: 560px;
-  background: url("../images/carouselslide/cafe_beach.jpg") 50% 70% no-repeat;
-  background-size: cover;
-  @media (max-width: 768px) {
-    min-height: 720px;
-
-  }
-}
-
 
 .box-description {
 
   padding: 30px;
 
 
-  &.slide-1, &.slide-2, &.slide-3, &.slide-4, &.slide-5 {
+  &.banner-hotel-content, &.yoga-banner-content {
 
     h2 {
-      font-size: 38px;
+      font-size: 36px;
       font-weight: normal;
       color: #FFF;
     }
 
     > p {
-      font-size: 22px;
-      color: #FFF;
+      font-size: 24px;
+      color: #FFF; /* #235f88; #24678F; */
       font-weight: 300;
       margin: 0;
     }
 
-    a.btn.btn-default.btn-lg.pull-right {
+    .btn.btn-default.btn-lg.pull-right {
 
       position: absolute;
       right: 15px;
@@ -203,9 +151,9 @@
 
   }
 
-  &.slide-1 {
+  &.banner-hotel-content, &.yoga-banner-content  {
 
-    margin-top: 230px;
+    margin-top: 190px;
     min-height: 210px;
     width: 600px; /* 430px; */
 
@@ -226,7 +174,7 @@
     }
 
     @media (max-width: 480px) {
-      min-height: 420px;
+      min-height: 290px;
       width: 300px;
     }
 
@@ -238,51 +186,23 @@
 
   }
 
-
-  &.slide-2, &.slide-3, &.slide-4, &.slide-5 {
-    float: right;
-    margin-top: 230px;
-    min-height: 210px;
-    width: 600px;
-
-    h2 {
-
-      margin-top: 0;
-      margin-bottom: 10px;
-    }
-
-    @media (max-width: 768px) {
-      float: left;
-
-    }
-
-    @media (min-width: 601px) and (max-width: 768px){
-      width: 580px;
-
-    }
-
-    @media (min-width: 569px) and (max-width: 600px){
-      width: 550px;
-
-    }
-
-    @media (min-width: 481px) and (max-width: 568px){
-      width: 460px;
-
-    }
-
-    @media (max-width: 480px) {
-      min-height: 420px;
-      width: 300px;
-    }
-
+  &.yoga-banner-content {
+    width: 580px;
   }
-
 
 }
 
+.box-beneficial {
+  background-color:#efefef;
+  h2 {
+    color:#235f88;
+    font-weight:300;
+    letter-spacing:1px;
+    padding-top: 25px;
+    padding-bottom:15px;
+  }
+}
 
-/*CAROUSEL END*/
 
 .main-content {
   margin-top:-158px;
@@ -294,10 +214,6 @@
   font-weight: 100;
 }
 
-.bonbon {
-  background-color: #88235f;
-  color: white;
-}
 
 a.reserve-hotel {
   font-size: 15px;
@@ -309,13 +225,13 @@ a.reserve-hotel {
 .why-book-go-healthy {
   color: #FFF;
   background-color:#88235f;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 100;
   padding: 30px 50px;
 }
 .why-book-go-healthy h3 {
-  font-size: 24px;
-  font-weight: 100;
+  font-size: 27px;
+  font-weight: 300;
 }
 
 .box-color-media-transparent {
@@ -331,12 +247,13 @@ a.reserve-hotel {
     color: #ff1a1a;
     font-size: 36px;
     line-height: 44px;
+
   }
 }
 
-.box-wood-color-bg {
-  background: rgba(74, 44, 22, 0.6);
-  .box-color-media-transparent;
+.bg-black {
+  background-color: #35527c;
+  color: #fff;
 }
 
 .grey {
@@ -359,4 +276,35 @@ background: -moz-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 
 linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
 
 */
+
+.caption h4 {
+  margin-top: 3px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #235f88;
+}
+.commanders {
+  font-weight: 400;
+  margin: 20px 0 0 0;
+  color:  #ff1a1a; /* #5f8823; */
+}
+
+.caption.color-white h3,
+.caption.color-white p {
+  color: white;
+  font-weight: 100;
+}
+
+.hotel-intro {
+  font-size: 17px;
+  font-weight: 300;
+}
+.hotel-intro h3 {
+  color:  #235f88; /* #395181; #FFC83F; */
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+
 
