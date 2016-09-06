@@ -7,7 +7,20 @@
 @import "hotel_presentation";
 @import "forms";
 
+.col-md-8-additional {
+  width: 65.66666667%;
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+}
 
+.col-md-4-additional {
+  width: 34.33333333%;
+  @media (max-width: 992px) {
+    width: 100%;
+
+  }
+}
 .gutter-0 {
   padding-left: 0;
   padding-right: 0;
@@ -60,35 +73,16 @@
 
   .logo-container {
     padding: 12px;
+    height: 100px;
   }
 
   .logo {
     height: 80px;
   }
 
-  .main-navbar {
-    float: right;
-    > li > a {
-      color: orange;
-    }
-  }
-
-  .btn-toggle {
-    color: orange;
-    .icon-bars {
-      margin-left: 5px;
-    }
-  }
 }
 
 /*NAVIGATION END*/
-
-.slogan {
-  font-size: 36px;
-  font-weight: bold;
-
-  color: @slogan-color;
-}
 
 .banner-hotel {
   min-height: 530px;
@@ -114,20 +108,23 @@
 
   &.banner-hotel-content, &.yoga-banner-content {
 
-    h2 {
-      font-size: 36px;
-      font-weight: normal;
-      color: #FFF;
-    }
-
-    > p {
+    > h1, p {
       font-size: 24px;
       color: #FFF; /* #235f88; #24678F; */
       font-weight: 300;
       margin: 0;
     }
 
-    .btn.btn-default.btn-lg.pull-right {
+    h2 {
+      font-size: 36px;
+      font-weight: normal;
+      color: #FFF;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+
+    a.btn.btn-default.btn-lg.pull-right {
 
       position: absolute;
       right: 15px;
@@ -136,16 +133,16 @@
       font-weight: bold;
       letter-spacing: 1px;
 
-      background-color: @btn-book-now-bg;
-      border-color: @btn-book-now-bg;
+      background-color: @btn-search-bg;
+      border-color: @btn-search-bg;
 
-      color: @carousel-inner-text-color;
+      color: @dark-blue;
 
       &:hover {
-        background-color: @btn-book-now-hover-bg;
-        border-color: @btn-book-now-hover-bg;
+        background-color: @btn-search-hover-bg;
+        border-color: @btn-search-bg;
 
-        color: @btn-book-now-hover-text;
+        color: @btn-search-text;
       }
     }
 
@@ -157,63 +154,33 @@
     min-height: 210px;
     width: 600px; /* 430px; */
 
-
-    @media (min-width: 601px) and (max-width: 768px){
-      width: 580px;
-
-    }
-
-    @media (min-width: 569px) and (max-width: 600px){
-      width: 550px;
+    @media (max-width: 768px){
+      width: auto;
 
     }
-
-    @media (min-width: 481px) and (max-width: 568px){
-      width: 460px;
-
-    }
-
-    @media (max-width: 480px) {
-      min-height: 290px;
-      width: 300px;
-    }
-
-    h2 {
-
-      margin-top: 0;
-      margin-bottom: 10px;
-    }
-
   }
 
   &.yoga-banner-content {
     width: 580px;
+
+    @media (max-width: 768px){
+      width: auto;
+    }
   }
 
 }
 
 .box-beneficial {
   background-color:#efefef;
-  h2 {
-    color:#235f88;
+  h3 {
+    color: @dark-blue;
     font-weight:300;
+    font-size: 28px;
     letter-spacing:1px;
     padding-top: 25px;
     padding-bottom:15px;
   }
 }
-
-
-.main-content {
-  margin-top:-158px;
-}
-
-.caption.color-white h3,
-.caption.color-white p {
-  color: white;
-  font-weight: 100;
-}
-
 
 a.reserve-hotel {
   font-size: 15px;
@@ -229,9 +196,23 @@ a.reserve-hotel {
   font-weight: 100;
   padding: 30px 50px;
 }
-.why-book-go-healthy h3 {
+.why-book-go-healthy h2 {
   font-size: 27px;
   font-weight: 300;
+}
+
+.editors-note-box {
+
+  color: #737373;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 20px;
+  h2 {
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 0;
+  }
+
 }
 
 .box-color-media-transparent {
@@ -257,37 +238,11 @@ a.reserve-hotel {
 }
 
 .grey {
-  color: #737373;
-  font-size: 15px;
-  font-weight: 300;
+  background-color:#eeeeee;
 }
 
-.bg-black {
-  background-color: #35527c;
-  color: #fff;
-}
 
-/*
-DOCUMENTATION ON BACKGROUND FROM MOZILLA
 
-background: -moz-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)),
--webkit-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)),
--ms-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)),
-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
-
-*/
-
-.caption h4 {
-  margin-top: 3px;
-  font-size: 18px;
-  font-weight: 400;
-  color: #235f88;
-}
-.commanders {
-  font-weight: 400;
-  margin: 20px 0 0 0;
-  color:  #ff1a1a; /* #5f8823; */
-}
 
 .caption.color-white h3,
 .caption.color-white p {
@@ -300,11 +255,21 @@ linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
   font-weight: 300;
 }
 .hotel-intro h3 {
-  color:  #235f88; /* #395181; #FFC83F; */
+  color: @dark-blue; /* #395181; #FFC83F; */
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
 }
+
+/*
+DOCUMENTATION ON BACKGROUND FROM MOZILLA
+
+background: -moz-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)),
+-webkit-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)),
+-ms-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)),
+linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+
+*/
 
 
 

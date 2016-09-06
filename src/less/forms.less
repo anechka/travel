@@ -8,21 +8,68 @@
 
 }
 
+.about-daniel-box {
+  padding-left:0;
+  padding-right: 15px;
+
+  @media (max-width: 992px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.about-patricia-box {
+  padding-left:15px;
+  padding-right: 0;
+
+  @media (max-width: 992px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+.commanders {
+  font-weight: 400;
+  margin: 20px 0 0 0;
+  color:  #ff1a1a; /* #5f8823; */
+}
+
 .form-container {
   padding-left:20px;
   padding-right:0;
+
+  @media (max-width: 992px) {
+    padding-left: 0;
+
+  }
 }
 
 form {
   padding:20px;
   background-color:#e6ead0; /*#e6e1e1;*/
   border:1px solid #e6e1e1;
-  h3 {
+
+  h2 {
     font-size: 27px;
     font-weight: 400;
-    color: #235f88;
+    color: @dark-blue;
     margin: 0;
     padding-bottom: 10px;
+  }
+
+  .input-box {
+    height: 40px;
+    border-radius: 0;
+  }
+
+  textarea.form-control {
+    border-radius: 0;
+  }
+
+  .radio-btn {
+    margin: 2px 0 0;
+
   }
   .btn-go.disabled {
 

@@ -5,18 +5,18 @@
 
     <form if="{ !flag }" id="conversationForm">
 
-        <h3>Send us a message</h3>
+        <h2>Send us a message</h2>
 
         <div class="form-group has-feedback">
             <label for="inputEmail" class="sr-only">Your email</label>
-            <input id="inputEmail" class="form-control" type="email" placeholder="Your email" data-error="Sorry, that email address is invalid" required>
+            <input id="inputEmail" class="form-control input-box" type="email" placeholder="Your email" data-error="Sorry, that email address is invalid" required>
 
             <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
             <div class="help-block with-errors"></div>
         </div>
         <div class="form-group">
             <label class="sr-only" for="userName">Your name</label>
-            <input class="form-control" id="userName" type="text" placeholder="Your name" data-minlength="3" required>
+            <input class="form-control input-box" id="userName" type="text" placeholder="Your name" data-minlength="3" required>
             <div class="help-block with-errors"></div>
         </div>
 
@@ -24,16 +24,16 @@
 
         <div class="form-group margin-top-15">
             <label for="inputCountry" class="sr-only">Country</label>
-            <input id="inputCountry" type="tetx" placeholder="Country" class="form-control" required>
+            <input id="inputCountry" type="tetx" placeholder="Country" class="form-control input-box" required>
         </div>
 
         <div class="form-group margin-top-15">
             <p> GENDER:
                 <label class="radio-inline">
-                    <input type="radio" name="inlineRadioOptionsSex" value="female" required> Female
+                    <input type="radio" class ="radio-btn" name="inlineRadioOptionsSex" value="female" required> Female
                 </label>
                 <label class="radio-inline">
-                    <input type="radio" name="inlineRadioOptionsSex" value="male"> Male
+                    <input type="radio" class ="radio-btn" name="inlineRadioOptionsSex" value="male"> Male
                 </label>
             </p>
 

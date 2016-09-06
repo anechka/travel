@@ -25,12 +25,12 @@ html(lang='en')
             header
                 .row
                     .col-md-12.gutter-0.banner-bg
-                        nav.navbar.navbar-default.navigation
+                        nav.navbar.navbar-default.navbar-fixed-top.navigation.hotel-presentation-nav
                             .container
                                 .row
                                     .navbar-header.logo-container
                                         a.navbar-brand.logo-brand(href="index.html")
-                                            img.logo(src="images/gohealthy-logo.png")
+                                            img.logo(src="images/gohealthy-logo-grey-content-h80.png")
 
                                         button.navbar-toggle.collapsed.pull-right.btn-toggle(type="button", data-toggle="collapse", data-target="#navbarCollapse")
                                             span.sr-only Toggle navigation
@@ -39,17 +39,25 @@ html(lang='en')
 
                                     .collapse.navbar-collapse.gutter-0(id="navbarCollapse")
                                         ul.nav.navbar-nav.main-navbar
-                                            li
-                                                a(href="#") Link1
-                                            li
-                                                a(href="") Link2
-                                            li
-                                                a(href="#") Link3
-                                            li
-                                                a(href="#") Link4
 
                                             li
-                                                a(href="#") Link5
+                                                a.btn.btn-default.btn-lg.pull-right.search-hotels(href='../reserve/', target='_blank', alt='Link to Go Healthy Travel partner hotels in Playa del Carmen')
+                                                    | Search Hotels
+                                                    span.glyphicon.glyphicon-chevron-right.icon-chevron(aria-hidden='true')
+                                            li
+                                                a(href="#") Home
+                                            li
+                                                a(href="") What you get
+                                            li
+                                                a(href="#") Wellness features
+                                            li
+                                                a(href="#") Why book with us
+
+                                            li
+                                                a(href="#") Founders
+
+                                            li
+                                                a(href="#") Contact us
 
             section#presentation_main_content
                 .row
