@@ -1,16 +1,43 @@
 /*HOTEL PRESENTATION PAGE BEGIN*/
 
-.navigation {
+.navigation.hotel-presentation-nav  {
 
-  background: transparent;
-  border: none;
+  top: 0;
+  visibility: hidden;
 
-  .navbar-header.logo-container {
-    padding: 0 12px 0 12px;
+
+  .navbar-header {
+    float: none;
+  }
+  .navbar-toggle {
+    display: block;
   }
 
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+
+  .navbar-collapse.collapse.in {
+    display: block!important;
+  }
+
+  .navbar-nav>li {
+    float: none;
+  }
+
+  .logo-container {
+    height: 70px;
+  }
+
+  .logo-small {
+    height: 40px;
+    width: 100px;
+  }
+
+
   .main-navbar {
-    margin-top: 24px;
+
+    margin-right: 30px;
     float: right;
 
     a.search-hotels {
@@ -31,16 +58,17 @@
       }
     }
 
+    & > li {
+      float: none;
+    }
+
     & > li > a {
       color: @dark-blue;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
 
-    @media (max-width: 768px) {
-      margin-right: 30px;
-    }
   }
-
-
 
   .btn-toggle {
     color: @dark-blue;
@@ -51,9 +79,7 @@
     color: @dark-blue;
   }
 
-  &.hotel-presentation-nav {
-    background: rgba(255, 255, 255, 0.6);
-  }
+  background: rgba(255, 255, 255, 0.6);
 
 }
 

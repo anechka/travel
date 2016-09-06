@@ -101,7 +101,6 @@
                     username: self.userName.value,
                     email: self.inputEmail.value,
                     sex: $(self.inlineRadioOptionsSex).filter(":checked").val(),
-                    city: self.inputCity.value,
                     country: self.inputCountry.value,
                     message: self.messageText.value,
                     isProfessionalTarget: $(self.inlineRadioOptionsProfessional).filter(":checked").val()
