@@ -26,25 +26,32 @@ html(lang='en')
             header
                 .row
                     .col-md-12.gutter-0.banner-bg
-                        nav.navbar.navbar-default.navbar-fixed-top.navigation.hotel-presentation-nav
+
+                        nav.navbar.navbar-default.navbar-fixed-top.navigation.bg-white.hotel-presentation-nav
                             .container
                                 .row
                                     .navbar-header.logo-container
-                                        a.navbar-brand(href="index.html")
-                                            img.logo-small(src="images/gohealthy-logo-grey-content-h80.png")
+                                        a.navbar-brand.logo-big(href="index.html")
+                                            img.logo-brand(src="images/gohealthy-logo-white-content-h80.png")
 
-                                        button.navbar-toggle.collapsed.pull-right.btn-toggle(type="button", data-toggle="collapse", data-target="#navbarCollapse")
-                                            span.sr-only Toggle navigation
-                                            span Hotels
-                                                i.fa.fa-bars.icon-bars
+                                        a.navbar-brand.logo-small(href="index.html", style="display: none")
+                                            img.logo-brand(src="images/gohealthy-logo-white-content-h80.png", style="height: 40px; width: 100px")
 
-                                    .collapse.navbar-collapse.gutter-0(id="navbarCollapse")
+                                        .col-md-4.col-xs-12.pull-right.btn-menu-container
+
+                                            button.navbar-toggle.collapsed.pull-right.btn-toggle(type="button", data-toggle="collapse", data-target="#navbarCollapse")
+                                                span.sr-only Toggle navigation
+                                                span
+                                                    i.fa.fa-bars.icon-bars
+
+                                            a.btn.btn-default.btn-lg.pull-right.navbar-btn.search-hotels(href='../reserve/', target='_blank', alt='Link to Go Healthy Travel partner hotels in Playa del Carmen')
+                                                | Search Hotels
+                                                span.glyphicon.glyphicon-chevron-right.icon-chevron(aria-hidden='true')
+
+
+                                    .collapse.navbar-collapse.col-md-6.col-xs-12.pull-right.gutter-0(id="navbarCollapse")
                                         ul.nav.navbar-nav.main-navbar
 
-                                            li
-                                                a.btn.btn-default.btn-lg.pull-right.search-hotels(href='../reserve/', target='_blank', alt='Link to Go Healthy Travel partner hotels in Playa del Carmen')
-                                                    | Search Hotels
-                                                    span.glyphicon.glyphicon-chevron-right.icon-chevron(aria-hidden='true')
                                             li
                                                 a(href="#") Home
                                             li
@@ -210,12 +217,25 @@ html(lang='en')
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
         script(type="text/javascript").
+
+            $(document).ready(function () {
+                $('.hotel-presentation-nav').css("background", "transparent");
+            });
+
             $(window).scroll(function () {
 
-                if ($(this).scrollTop() > 0) {
-                    $('.hotel-presentation-nav').fadeIn();
+                if ($(this).scrollTop() > 50) {
+                    $('.hotel-presentation-nav').css("background", "rgba(255, 255, 255, 0.85)");
+                    $('.logo-big').css("display", "none");
+                    $('.logo-container').css("height", "70px");
+                    $('.btn-menu-container').show();
+                    $('.logo-small').show();
                 }
                 else {
-                    $('.hotel-presentation-nav').fadeOut();
+                    $('.hotel-presentation-nav').css("background", "transparent");
+                    $('.logo-big').css("display", "block");
+                    $('.logo-container').css("height", "110px");
+                    $('.btn-menu-container').hide();
+                    $('.logo-small').hide();
                 }
             });

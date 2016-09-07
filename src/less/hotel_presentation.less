@@ -1,15 +1,15 @@
 /*HOTEL PRESENTATION PAGE BEGIN*/
 
+
 .navigation.hotel-presentation-nav  {
 
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.85);
 
-  top: 0;
-  display: none;
+  top: 17px;
 
-  @media (max-width: 768px) {
-    display: block;
 
+  .btn-menu-container {
+    display: none;
   }
 
 
@@ -32,38 +32,39 @@
     float: none;
   }
 
-  .logo-container {
+  /*.logo-container {
     height: 70px;
   }
 
   .logo-small {
     height: 40px;
     width: 100px;
+  }*/
+
+  a.search-hotels {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    padding: 9px 16px;
+    background-color: @btn-search-bg;
+    border-color: @btn-search-bg;
+
+    color: @dark-blue;
+
+    &:hover {
+      background-color: @btn-search-hover-bg;
+      border-color: @btn-search-bg;
+
+      color: @btn-search-text;
+    }
   }
 
 
   .main-navbar {
 
-    margin-right: 30px;
     float: right;
-
-    a.search-hotels {
-      font-weight: bold;
-      font-size: 16px;
-      letter-spacing: 1px;
-      border-radius: 0;
-      background-color: @btn-search-bg;
-      border-color: @btn-search-bg;
-
-      color: @dark-blue;
-
-      &:hover {
-        background-color: @btn-search-hover-bg;
-        border-color: @btn-search-bg;
-
-        color: @btn-search-text;
-      }
-    }
+    margin-right: 170px;
 
     & > li {
       float: none;
@@ -81,11 +82,13 @@
 
   .btn-toggle {
     color: @dark-blue;
+    border:1px solid @dark-blue;
   }
 
   .btn-toggle .icon-bars {
-    margin-left: 5px;
+
     color: @dark-blue;
+    font-size: 16px;
   }
 
 }
