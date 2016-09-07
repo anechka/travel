@@ -27,14 +27,14 @@ html(lang='en')
                 .row
                     .col-md-12.gutter-0.banner-bg
 
-                        nav.navbar.navbar-default.navbar-fixed-top.navigation.bg-white.hotel-presentation-nav
+                        nav.navbar.navbar-default.navbar-fixed-top.navigation
                             .container
                                 .row
                                     .navbar-header.logo-container
                                         a.navbar-brand.logo-big(href="index.html")
                                             img.logo-brand(src="images/gohealthy-logo-white-content-h80.png")
 
-                                        a.navbar-brand.logo-small(href="index.html", style="display: none")
+                                        a.navbar-brand.logo-small(href="index.html", style="display: none; height: 70px")
                                             img.logo-brand(src="images/gohealthy-logo-white-content-h80.png", style="height: 40px; width: 100px")
 
                                         .col-md-4.col-xs-12.pull-right.btn-menu-container
@@ -219,20 +219,24 @@ html(lang='en')
         script(type="text/javascript").
 
             $(document).ready(function () {
-                $('.hotel-presentation-nav').css("background", "transparent");
+                $('.navigation').css("background", "transparent");
             });
 
             $(window).scroll(function () {
 
+                var hotel_nav = $('.navigation');
+
                 if ($(this).scrollTop() > 50) {
-                    $('.hotel-presentation-nav').css("background", "rgba(255, 255, 255, 0.85)");
+                    hotel_nav.css("background", "#3E7399");
+                    hotel_nav.css("top", "0");
                     $('.logo-big').css("display", "none");
                     $('.logo-container').css("height", "70px");
                     $('.btn-menu-container').show();
                     $('.logo-small').show();
                 }
                 else {
-                    $('.hotel-presentation-nav').css("background", "transparent");
+                    hotel_nav.css("background", "transparent");
+                    hotel_nav.css("top", "17px");
                     $('.logo-big').css("display", "block");
                     $('.logo-container').css("height", "110px");
                     $('.btn-menu-container').hide();

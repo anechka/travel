@@ -7,7 +7,7 @@ html(lang='en')
         // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
         title Playa del Carmen Luxury Hotels with Healthy Lifestyles
         meta(name='description', content="Find Luxury Hotels in Playa del Carmen with : Author's food, bodywork treatments and beachfront yoga. Designed by experienced wellness professionals.")
-        link(href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Roboto:100,300,400', rel='stylesheet', type='text/css')
         link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', rel='stylesheet')
         // // Bootstrap
         // link(href='../bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
@@ -32,12 +32,38 @@ html(lang='en')
             header
                 .row
                     .col-md-12.gutter-0
-                        nav.navbar.navbar-default.navigation
+                        nav.navbar.navbar-default.navbar-fixed-top.navigation
                             .container
                                 .row
                                     .navbar-header.logo-container
-                                        a.navbar-brand(href="index.html")
+                                        a.navbar-brand.logo-big(href="index.html")
                                             img.logo-brand(src="images/gohealthy-logo-white-content-h80.png")
+
+                                        a.navbar-brand.logo-small(href="index.html", style="display: none; height: 70px")
+                                            img.logo-brand(src="images/gohealthy-logo-white-content-h80.png", style="height: 40px; width: 100px")
+
+                                        .col-md-4.col-xs-12.pull-right.btn-menu-container
+
+                                            button.navbar-toggle.collapsed.pull-right.btn-toggle(type="button", data-toggle="collapse", data-target="#navbarCollapse")
+                                                span.sr-only Toggle navigation
+                                                span
+                                                    i.fa.fa-bars.icon-bars
+
+                                            a.btn.btn-default.btn-lg.pull-right.navbar-btn.search-hotels(href='../reserve/', target='_blank', alt='Link to Go Healthy Travel partner hotels in Playa del Carmen')
+                                                | Search Hotels
+                                                span.glyphicon.glyphicon-chevron-right.icon-chevron(aria-hidden='true')
+
+                                    .collapse.navbar-collapse.col-md-6.col-xs-12.pull-right.gutter-0(id="navbarCollapse")
+                                        ul.nav.navbar-nav.main-navbar
+
+                                            li
+                                                a(href="#") Home
+                                            li
+                                                a(href="") What You Get
+                                            li
+                                                a(href="#") Benefits
+                                            li
+                                                a(href="#") Contact US
 
 
                 .row
@@ -46,11 +72,12 @@ html(lang='en')
                         .container
                             .row
                                 .col-md-4.box-description.box-brown-color-bg.banner-hotel-content
-                                    h2
-                                        | Immerse Yourself in
+                                    h1 Hotels and Wellness Experiences
                                         br
-                                        .color a Unique Experience
-                                    h1 Hotels and Wellness Lifestyles in Playa del Carmen
+                                        .color in Playa del Carmen
+                                    p Immerse Yourself in a Unique Experience
+
+
                                     a.btn.btn-default.btn-lg.pull-right(href='../reserve/', target='_blank', alt='Link to Go Healthy Travel partner hotels in Playa del Carmen')
                                         | SEARCH
                                         span.glyphicon.glyphicon-chevron-right.icon-chevron(aria-hidden='true')
@@ -60,18 +87,19 @@ html(lang='en')
                         .col-md-12
                             .col-md-12.box-blue-color-bg.box-what-included
                                 .row
+                                    h2.wellness-model What You Get
                                     .col-md-4.block-right-border
-                                        h3.text-uppercase What you get
+                                        //h3.text-uppercase What you get
                                         p
-                                            | Upscale hotels at walking distance from our wellness beachfront lounge and restaurant in Playa del Carmen.
+                                            | Upscale hotels in Playa del Carmen, at walking distance from our wellness beachfront lounge and restaurant.
                                     .col-md-4.block-right-border
-                                        h3.text-uppercase What‘s Included
+                                        //h3.text-uppercase What‘s Included
                                         p
-                                            | Signature cuisine for all three meals. Daily yoga classes, flagship treatments, and bodywork massages.
+                                            | Signature cuisine, wellness treatments and rituals, daily yoga classes.
                                     .col-md-4.block-right-border.no-border-bottom
-                                        h3.text-uppercase More
+                                        //h3.text-uppercase More
                                         p
-                                            | Other complementary services include beach chaise longue, hotel transfers, and room service from our lounge to your hotel.
+                                            | Wellness room service from our lounge, beach chaise longue, airport transfers.
                     .row
                         .col-md-12
                             .col-md-12.yoga-banner
@@ -79,14 +107,14 @@ html(lang='en')
                                 .row
                                     .col-md-4.box-description.box-brown-color-bg.yoga-banner-content
                                         h2
-                                            | Enjoy Wellness Lifestyles
+                                            | Wellness Experiences
                                             br
-                                            .color in Playa del Carmen
-                                        p Hotels, Signature Cuisine, Treatments and Yoga
+                                            .color Connect and Rejuvanate
+                                        p Genthly get healthier from within
                     .row
                         .col-md-12
-                            .col-md-12.box-beneficial
-                                h3 Beneficial Wellness Features
+                            .col-md-12.box-discover-our
+                                h3 Discover Our Wellness Features
 
                     .row
                         .col-md-4
@@ -94,32 +122,24 @@ html(lang='en')
                                 img.img-responsive(src='images/salad.jpg', alt='Picture of customer engaging with a Go Healhty enormous salad')
                                 .caption
                                     h4 Signature Cuisine
-                                    p
-                                        | Enjoy the magic of delicious, plant-based cuisine cooked by a master chef during your vacation.
-                                        | This wholesome food will unify your body, mind, and spirit at both cellular and holistic levels.
+                                    p Enjoy the magic of delicious, plant-based cuisine cooked by a master chef during your vacation.
+                                        |This wholesome food will unify your body, mind, and spirit at both cellular and holistic levels.
                                     p
                                         | Irrefutable scientific data confirms that a whole-food, plant-based diet is ideal for helping your cells, organs, and body stave off disease,
                                         | achieve and maintain your ideal body weight, enhance exercise performance, and generally sustain a healthy life.
-                                    p
-                                        | The benefits of this kind of diet are astounding.
-                                    p
-                                        | Our hotel and wellness packages in Playa del Carmen include whole-food, plant-based cuisine.&nbsp
-                                        a.reserve-hotel(href='../reserve/', target='_blank', alt='Link to Go Healthy Travel partner hotels in Playa del Carmen') Search Hotels
+
                         .col-md-4
                             .thumbnail.thumbnail-box
                                 img.img-responsive(src='images/massage-treatment.png', alt='')
                                 .caption
-                                    h4 Flagship Treatments
-                                    p
-                                        | Discover a new depth of serenity and awareness through our uniquely orchestrated massage techniques.
-                                    p
-                                        | Our signature, restorative massage remedies leave long-lasting benefits in the body, mind, and spirit.
-                                    p
-                                        | Massage treatments alternate daily with our flagship Body Rituals that include high vibration and organic essential oils
-                                        | that are concentrated on pressure points and energy centres, which bring about a sense of deep release, balance, and connection.
-                                    p
-                                        | Our hotel and wellness packages in Playa del Carmen include massages and body rituals.&nbsp
-                                        a.reserve-hotel(href='../reserve/', target='_blank', alt='Link to Go Healthy Travel partner hotels in Playa del Carmen') Search Hotels
+                                    h4 Wellness Treatments and Rituals
+
+                                    p Discover a new depth of serenity and awareness through our uniquely orchestrated massage techniques.
+                                        |Our signature, restorative massage remedies leave long-lasting benefits in the body, mind, and spirit.
+
+                                    p Massage treatments alternate daily with our Flagship Wellness Rituals that include high vibration and organic essential oils
+                                        |that are concentrated on pressure points and energy centres,
+                                        |which bring about a sense of deep release, balance, and connection.
                         .col-md-4
                             .thumbnail.thumbnail-box
                                 img.img-responsive(src='images/yoga-asana-on-the-beach.png', alt='')
@@ -132,9 +152,7 @@ html(lang='en')
                                         | Classes are available throughout the day and take place in an open beachfront studio.
                                     p
                                         | Increasing research shows the effectiveness of yoga in maintaining and restoring physical health, emotional balance, and sense of self.
-                                    p
-                                        | Our hotel and wellness packages in Playa del Carmen include daily yoga practice.&nbsp
-                                        a.reserve-hotel(href='../reserve/', target='_blank', alt='Link to Go Healthy Travel partner hotels in Playa del Carmen') Search Hotels
+
                     .row
                         .col-md-12.margin-bottom-30.margin-top-20
                             .col-md-12.box-wide-blue-color-bg.why-book-go-healthy
@@ -145,25 +163,24 @@ html(lang='en')
                         .col-md-4
                             .thumbnail.thumbnail-box.thumbnail-bordered
                                 .caption
-                                    h3.text-uppercase
-                                        strong Hoteliers and Property Owners
+                                    h3.text-uppercase Hoteliers and Property Owners
                                     p
                                         | We welcome select property owners in Playa del Carmen, Tulum, Los Cabos, and Nuevo Vallarta. Contact us to explore options for hosting our guests at your property or bringing the benefits of Go Healthy lifestyles to your clients.
                         .col-md-4
                             .thumbnail.thumbnail-box.thumbnail-bordered
                                 .caption
-                                    h3.text-uppercase
-                                        strong Travel Professionals
+                                    h3.text-uppercase Travel Professionals
                                     p
                                         | Promote wellness vacations in luxury hotels to your clients.
                                         | Go Healthy Travel is the only full service wellness vacations provider in Playa del Carmen.
                                         | Let‘s start working together. Your clients will love you for it.
+                                        br
+                                        |&nbsp
 
                         .col-md-4
                             .thumbnail.thumbnail-box.thumbnail-bordered
                                 .caption
-                                    h3.text-uppercase
-                                        strong Events and Meeting Planners
+                                    h3.text-uppercase Events and Meeting Planners
                                     p Our beachfront lounge, local logistics and experience are great reasons to start the conversation and successfully host your event in Playa del Carmen.
                                         |We create special, blissful experiences and memories for your clients.
 
@@ -188,18 +205,18 @@ html(lang='en')
                                                 .thumbnail.thumbnail-box
                                                     img.img-responsive(src='images/daniel-seymour-large.png', alt='A picture of Daniel Seymour')
                                                     .caption
-                                                        h2.commanders Daniel Seymour
-                                                        h3.text-uppercase Chief Healthy
+                                                        h2.commanders-name Daniel Seymour
+                                                        h3.commanders-position Chief Healthy
                                                         p
                                                             | Daniel is a Holistic Aromatherapist, Certified Teacher of Transcendental Meditation and a Maharishi Ayurveda Consultant.
-                                                            | Daniel‘s extensive international wellness experience brings richness and depth to Go Healthy Travel programs.
+                                                            | Daniel‘s international wellness experience brings richness and depth to Go Healthy Travel programs.
 
                                             .col-md-6.about-patricia-box
                                                 .thumbnail.thumbnail-box
                                                     img.img-responsive(src="images/patricia-ojeda-bn-large.png", alt="A picture of Patricia Ojeda")
                                                     .caption
-                                                        h2.commanders Patricia Ojeda
-                                                        h3.text-uppercase Chief Shakti
+                                                        h2.commanders-name Patricia Ojeda
+                                                        h3.commanders-position Chief Shakti
                                                         p
                                                             | Patricia is a Certified Iyengar Yoga Teacher, Holistic Nutritionist.
                                                             |Patricia brings a breadth of experience to Go Healthy Travel customers based on her long-standing health and wellness consulting services to her students and clients.
@@ -209,8 +226,7 @@ html(lang='en')
 
                                         .thumbnail.thumbnail-box.thumbnail-bordered.margin-top-30
                                             .caption
-                                                h3.text-uppercase
-                                                    strong Events and Meeting Planners
+                                                h3.text-uppercase Events and Meeting Planners
                                                 p Chat with us from 8:00 am to 8:00 pm.
                                                 |                   Whatsapp: +52 1 (984) 202 2249
                                                 p
@@ -236,7 +252,7 @@ html(lang='en')
                                     li
                                         a(href='http://gohealthy.travel/terms.html', target='_blank') Terms
                             .col-md-9
-                                | We create
+                                | We create&nbsp
                                 span.wellness wellness experiences
                                 |  with long lasting benefits.
 
@@ -253,3 +269,35 @@ html(lang='en')
         script(src="js/form.jsx", type="riot/tag")
         script(type="text/javascript").
             riot.mount("form-tag");
+        script(type="text/javascript").
+            $(document).ready(function () {
+                $('.navigation').css("background", "transparent");
+            });
+
+            $(window).scroll(function () {
+
+                var hotel_nav = $('.navigation');
+
+                if ($(this).scrollTop() > 50) {
+                    hotel_nav.css("background", "#3E7399");
+                    hotel_nav.css("top", "0");
+                    $('.logo-big').css("display", "none");
+                    $('.logo-container').css("height", "70px");
+                    $('.btn-menu-container').show();
+                    $('.logo-small').show();
+                }
+                else {
+                    hotel_nav.css("background", "transparent");
+                    hotel_nav.css("top", "17px");
+                    $('.logo-big').css("display", "block");
+                    $('.logo-container').css("height", "110px");
+                    $('.btn-menu-container').hide();
+                    $('.logo-small').hide();
+                }
+            });
+
+
+
+
+
+

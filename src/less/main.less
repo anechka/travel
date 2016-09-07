@@ -64,14 +64,97 @@
 
 /*NAVIGATION BEGIN*/
 
+.navigation  {
 
-.navigation {
-  background: transparent;
-  border: none;
   top: 17px;
+  border: none;
   z-index: 1;
 
+
+  .btn-menu-container {
+    display: none;
+  }
+
+  .logo-small {
+    &:hover {
+      background: rgba(238, 238, 238, 0.22);
+    }
+  }
+
+
+  .navbar-header {
+    float: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+
+  .navbar-collapse.collapse.in {
+    display: block!important;
+  }
+
+  .navbar-nav>li {
+    float: none;
+  }
+
+
+  a.search-hotels {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    padding: 9px 16px;
+    background-color: @btn-search-bg;
+    border-color: @btn-search-bg;
+
+    color: @dark-blue;
+
+    &:hover {
+      background-color: @btn-search-hover-bg;
+      border-color: @btn-search-bg;
+
+      color: @btn-search-text;
+    }
+  }
+
+
+  .main-navbar {
+
+    float: right;
+    margin-right: 170px;
+
+    & > li {
+      float: none;
+      &:first-child > a{
+        margin-bottom: 10px;
+      }
+    }
+
+    & > li > a {
+      color: @dark-blue;
+
+    }
+
+  }
+
+  .btn-toggle {
+    color: @dark-blue;
+    border:none;
+  }
+
+  .btn-toggle .icon-bars {
+
+    color: #FFF;
+    font-size: 20px;
+    transform: scale(1.5,1);
+  }
+
 }
+
 
 .logo-container {
   height: 110px;
@@ -89,7 +172,7 @@
   /* background: url("../images/carouselslide/woman.jpg") 50% 85% no-repeat; */
   background: url("../images/carouselslide/Beach-House-Pool.jpg") 50% 85% no-repeat;
   background-size: cover;
-  margin-top: -130px;
+  margin-top: -2px;
 }
 
 .yoga-banner {
@@ -108,14 +191,14 @@
 
   &.banner-hotel-content, &.yoga-banner-content {
 
-    > h1, p {
+    > p {
       font-size: 24px;
       color: #FFF; /* #235f88; #24678F; */
       font-weight: 300;
       margin: 0;
     }
 
-    h2 {
+    h1, h2 {
       font-size: 36px;
       font-weight: normal;
       color: #FFF;
@@ -148,7 +231,7 @@
 
   }
 
-  &.banner-hotel-content, &.yoga-banner-content  {
+  &.banner-hotel-content {
 
     margin-top: 190px;
     min-height: 210px;
@@ -161,6 +244,7 @@
   }
 
   &.yoga-banner-content {
+    margin-top: 190px;
     width: 580px;
 
     @media (max-width: 768px){
@@ -170,11 +254,11 @@
 
 }
 
-.box-beneficial {
-  background-color:#efefef;
+.box-discover-our {
+  background-color:#FFF;
   h3 {
     color: @dark-blue;
-    font-weight:300;
+    font-weight:100;
     font-size: 28px;
     letter-spacing:1px;
     padding-top: 25px;
@@ -183,8 +267,7 @@
 }
 
 a.reserve-hotel {
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 17px;
   /* text-transform: uppercase; */
   text-decoration: none;
 }
@@ -196,7 +279,10 @@ a.reserve-hotel {
   font-weight: 100;
   padding: 30px 50px;
 }
-.why-book-go-healthy h2 {
+
+.why-book-go-healthy h2,
+.start-the-conversation h2,
+.wellness-model {
   font-size: 27px;
   font-weight: 300;
 }

@@ -29,10 +29,18 @@
 
 }
 
-.commanders {
-  font-weight: 400;
-  margin: 20px 0 0 0;
-  color:  #ff1a1a; /* #5f8823; */
+.commanders-name {
+  line-height: 24px;
+  font-weight: 100;
+  color: #ff1a1a;
+  /* #5f8823; */
+}
+.commanders-position {
+  font-weight: 100;
+  line-height: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .form-container {
@@ -71,6 +79,19 @@ form {
     margin: 2px 0 0;
 
   }
+  .btn-go {
+
+    background-color:#5f8823;
+    color:#ffffff;
+    padding:10px 25px;
+    font-size:16px;
+    opacity: 1;
+    &:hover {
+      color: #5f8823;
+    }
+
+  }
+
   .btn-go.disabled {
 
     background-color:#5f8823;
